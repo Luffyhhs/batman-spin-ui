@@ -1,0 +1,82 @@
+.box {
+  display: flex;
+  height: 30rem;
+  flex-direction: column;
+  // align-items: center;
+  width: 100%;
+  padding: 2.2rem 0;
+  .bar-vip {
+    grid-template-columns: 0.75fr 0.37fr;
+  }
+  &-bar {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.58fr 0.37fr;
+    align-items: center;
+
+    &--title {
+      justify-self: end;
+      display: inline-block;
+      color: var(--white);
+    }
+    .title-vip {
+      font-family: "Times New Roman";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 3.6rem;
+      line-height: 4.1rem;
+      color: #ffe1a5;
+    }
+    .arrows {
+      width: 20%;
+      display: flex;
+      gap: 0.8rem;
+      justify-self: flex-end;
+      span {
+        color: var(--white);
+        font-size: 2rem;
+      }
+    }
+    .arrows-vip {
+      justify-self: center !important;
+    }
+  }
+  .games {
+    display: flex;
+    justify-content: space-evenly;
+    .game {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &-img {
+        width: 20rem;
+        height: 17rem;
+        margin-bottom: 0.6rem;
+      }
+      &-name {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 2.3rem;
+
+        display: block;
+        color: var(--white);
+      }
+    }
+  }
+}
+/* VIP Promotions */
+
+// position: absolute;
+// width: 268px;
+// height: 34px;
+// left: calc(50% - 268px/2 + 0.5px);
+// top: 44px;
+
+// font-family: 'Times New Roman';
+// font-style: normal;
+// font-weight: 700;
+// font-size: 36px;
+// line-height: 41px;
+
+// color: #FFE1A5;

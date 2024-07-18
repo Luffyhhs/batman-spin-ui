@@ -1,0 +1,2207 @@
+/* Dashboard */
+
+.layout {
+  mix-width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 0.25fr 0.5fr 0.25fr;
+  justify-content: center;
+  .main-container {
+    grid-column: 2;
+    position: relative;
+    max-width: 80rem;
+    height: auto;
+
+    .header {
+      position: absolute;
+      width: 100%;
+      height: 37.6rem;
+      padding: 0 2rem;
+      background: #000000;
+
+      .carousel-container {
+        position: absolute;
+        top: 15rem;
+        width: 95%;
+      }
+    }
+    .body {
+      /* Rectangle 15 */
+
+      position: relative;
+      max-width: 99.9%;
+      height: 100%;
+      top: 37.5rem;
+      background: #400a05;
+      // transform: matrix(1, 0, 0, -1, 0, 0);
+
+      .boxes {
+        margin: 1.6rem 4.8rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+      }
+    }
+  }
+}
+
+// /* A */
+
+// // position: absolute;
+// // visibility: hidden;
+// // width: 55px;
+// // height: 76px;
+// // left: 168px;
+// // top: 25px;
+
+// /* Group 5 */
+
+// position: absolute;
+// width: 55px;
+// height: 76px;
+// left: 168px;
+// top: 25px;
+
+// /* A */
+
+// position: absolute;
+// width: 55px;
+// height: 76px;
+// left: 168px;
+// top: 25px;
+
+// font-family: "Archivo Black";
+// font-style: normal;
+// font-weight: 400;
+// font-size: 70px;
+// line-height: 76px;
+
+// color: #ffe78d;
+
+// filter: blur(1px);
+
+// /* A */
+
+// position: absolute;
+// width: 50px;
+// height: 70px;
+// left: 170px;
+// top: 28px;
+
+// font-family: "Archivo Black";
+// font-style: normal;
+// font-weight: 400;
+// font-size: 64px;
+// line-height: 70px;
+// /* identical to box height */
+
+// color: #000000;
+
+// text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+// /* Rectangle 9 */
+
+// position: absolute;
+// width: 1440px;
+// height: 669px;
+// left: 0px;
+// top: 0px;
+
+// background: #000000;
+
+// /* R */
+
+// position: absolute;
+// visibility: hidden;
+// width: 0px;
+// height: 0px;
+// left: 216px;
+// top: 28px;
+
+// /* Group 5 */
+
+// position: absolute;
+// width: nanpx;
+// height: nanpx;
+// left: 216px;
+// top: 28px;
+
+// /* R */
+
+// position: absolute;
+// visibility: hidden;
+// width: 55px;
+// height: 76px;
+// left: 214px;
+// top: 25px;
+
+// font-family: "Archivo Black";
+// font-style: normal;
+// font-weight: 400;
+// font-size: 70px;
+// line-height: 76px;
+
+// color: #ffe78d;
+
+// /* R */
+
+// position: absolute;
+// visibility: hidden;
+// width: 50px;
+// height: 70px;
+// left: 216px;
+// top: 28px;
+
+// font-family: "Archivo Black";
+// font-style: normal;
+// font-weight: 400;
+// font-size: 64px;
+// line-height: 70px;
+// /* identical to box height */
+
+// color: #000000;
+
+// /* button */
+
+// position: absolute;
+// width: 96px;
+// height: 40px;
+// left: 1263px;
+// top: 16px;
+
+// background: #20273d;
+// border-radius: 2px;
+
+// /* span */
+
+// position: absolute;
+// width: 46.09px;
+// height: 21px;
+// left: 12px;
+// top: calc(50% - 21px / 2);
+
+// /* span */
+
+// /* Auto layout */
+// display: flex;
+// flex-direction: row;
+// align-items: center;
+// padding: 0px;
+// gap: 8px;
+
+// position: absolute;
+// width: 47px;
+// height: 21px;
+// left: 0px;
+// top: 0px;
+
+// /* enFlag.f28a649c.svg */
+
+// /* Auto layout */
+// display: flex;
+// flex-direction: row;
+// align-items: flex-start;
+// padding: 0px;
+
+// width: 25px;
+// height: 18px;
+
+// /* Inside auto layout */
+// flex: none;
+// order: 0;
+// flex-grow: 0;
+
+// /* enFlag.f28a649c.svg */
+
+// width: 25px;
+// height: 18px;
+
+// /* Inside auto layout */
+// flex: none;
+// order: 0;
+// flex-grow: 0;
+
+// /* Vector */
+
+// position: absolute;
+// left: 0.4%;
+// right: 1.89%;
+// top: 0%;
+// bottom: 5.06%;
+
+// background: #e6e7e8;
+
+// /* Vector */
+
+// position: absolute;
+// left: 0.4%;
+// right: 1.89%;
+// top: 87.6%;
+// bottom: 5.06%;
+
+// background: #da2128;
+
+// /* Vector */
+
+// position: absolute;
+// left: 0.4%;
+// right: 1.89%;
+// top: 72.97%;
+// bottom: 19.68%;
+
+// background: #da2128;
+
+// /* Vector */
+
+// position: absolute;
+// left: 0.4%;
+// right: 1.89%;
+// top: 58.36%;
+// bottom: 34.31%;
+
+// background: #da2128;
+
+// /* Vector */
+
+// position: absolute;
+// left: 0.4%;
+// right: 1.89%;
+// top: 43.73%;
+// bottom: 48.93%;
+
+// background: #da2128;
+
+// /* Vector */
+
+// position: absolute;
+// left: 0.4%;
+// right: 1.89%;
+// top: 29.11%;
+// bottom: 63.54%;
+
+// background: #da2128;
+
+// /* Vector */
+
+// position: absolute;
+// left: 0.4%;
+// right: 1.89%;
+// top: 14.48%;
+// bottom: 78.17%;
+
+// background: #da2128;
+
+// /* Vector */
+
+// position: absolute;
+// left: 0.4%;
+// right: 1.89%;
+// top: 0%;
+// bottom: 92.65%;
+
+// background: #da2128;
+
+// /* Vector */
+
+// position: absolute;
+// left: 0.4%;
+// right: 48.55%;
+// top: 0%;
+// bottom: 48.9%;
+
+// background: #006bb5;
+
+// /* Vector */
+
+// position: absolute;
+// left: 1.82%;
+// right: 94.14%;
+// top: 1.15%;
+// bottom: 93.37%;
+
+// background: #ededee;
+
+// /* Vector */
+
+// position: absolute;
+// left: 10.25%;
+// right: 85.73%;
+// top: 1.15%;
+// bottom: 93.37%;
+
+// background: #ededee;
+
+// /* Vector */
+
+// position: absolute;
+// left: 19.02%;
+// right: 76.96%;
+// top: 1.15%;
+// bottom: 93.37%;
+
+// background: #ededee;
+
+// /* Vector */
+
+// position: absolute;
+// left: 27.81%;
+// right: 68.17%;
+// top: 1.15%;
+// bottom: 93.37%;
+
+// background: #ededee;
+
+// /* Vector */
+
+// position: absolute;
+// left: 36.56%;
+// right: 59.37%;
+// top: 1.15%;
+// bottom: 93.37%;
+
+// background: #ededee;
+
+// /* Vector */
+
+// position: absolute;
+// left: 5.83%;
+// right: 90.11%;
+// top: 6.88%;
+// bottom: 87.61%;
+
+// background: #ededee;
+
+// /* Vector */
+
+// position: absolute;
+// left: 14.25%;
+// right: 81.7%;
+// top: 6.88%;
+// bottom: 87.61%;
+
+// background: #ededee;
+
+// /* Vector */
+
+// position: absolute;
+// left: 23.03%;
+// right: 72.91%;
+// top: 6.88%;
+// bottom: 87.61%;
+
+// background: #ededee;
+
+// /* Vector */
+
+// position: absolute;
+// left: 31.82%;
+// right: 64.14%;
+// top: 6.88%;
+// bottom: 87.61%;
+
+// background: #ededee;
+
+// /* Vector */
+
+// position: absolute;
+// left: 40.61%;
+// right: 55.37%;
+// top: 6.88%;
+// bottom: 87.61%;
+
+// background: #ededee;
+
+// /* Vector */
+
+// position: absolute;
+// left: 5.83%;
+// right: 90.11%;
+// top: 17.35%;
+// bottom: 77.17%;
+
+// background: #ededee;
+
+// /* Vector */
+
+// position: absolute;
+// left: 14.25%;
+// right: 81.7%;
+// top: 17.35%;
+// bottom: 77.17%;
+
+// background: #ededee;
+
+// /* Vector */
+
+// position: absolute;
+// left: 23.03%;
+// right: 72.91%;
+// top: 17.35%;
+// bottom: 77.17%;
+
+// background: #ededee;
+
+// /* Vector */
+
+// position: absolute;
+// left: 31.82%;
+// right: 64.14%;
+// top: 17.35%;
+// bottom: 77.17%;
+
+// background: #ededee;
+
+// /* Vector */
+
+// position: absolute;
+// left: 40.61%;
+// right: 55.37%;
+// top: 17.35%;
+// bottom: 77.17%;
+
+// background: #ededee;
+
+// /* Vector */
+
+// position: absolute;
+// left: 5.83%;
+// right: 90.11%;
+// top: 27.78%;
+// bottom: 66.74%;
+
+// background: #ededee;
+
+// /* Vector */
+
+// position: absolute;
+// left: 14.25%;
+// right: 81.7%;
+// top: 27.78%;
+// bottom: 66.74%;
+
+// background: #ededee;
+
+// /* Vector */
+
+// position: absolute;
+// left: 23.03%;
+// right: 72.91%;
+// top: 27.78%;
+// bottom: 66.74%;
+
+// background: #ededee;
+
+// /* Vector */
+
+// position: absolute;
+// left: 31.82%;
+// right: 64.14%;
+// top: 27.78%;
+// bottom: 66.74%;
+
+// background: #ededee;
+
+// /* Vector */
+
+// position: absolute;
+// left: 40.61%;
+// right: 55.37%;
+// top: 27.78%;
+// bottom: 66.74%;
+
+// background: #ededee;
+
+// /* Vector */
+
+// position: absolute;
+// left: 5.83%;
+// right: 90.11%;
+// top: 38.23%;
+// bottom: 56.28%;
+
+// background: #ededee;
+
+// /* Vector */
+
+// position: absolute;
+// left: 14.25%;
+// right: 81.7%;
+// top: 38.23%;
+// bottom: 56.28%;
+
+// background: #ededee;
+
+// /* Vector */
+
+// position: absolute;
+// left: 23.03%;
+// right: 72.91%;
+// top: 38.23%;
+// bottom: 56.28%;
+
+// background: #ededee;
+
+// /* Vector */
+
+// position: absolute;
+// left: 31.82%;
+// right: 64.14%;
+// top: 38.23%;
+// bottom: 56.28%;
+
+// background: #ededee;
+
+// /* Vector */
+
+// position: absolute;
+// left: 40.61%;
+// right: 55.37%;
+// top: 38.23%;
+// bottom: 56.28%;
+
+// background: #ededee;
+
+// /* Vector */
+
+// position: absolute;
+// left: 45.36%;
+// right: 50.62%;
+// top: 1.15%;
+// bottom: 93.37%;
+
+// background: #ededee;
+
+// /* Vector */
+
+// position: absolute;
+// left: 1.82%;
+// right: 94.14%;
+// top: 11.59%;
+// bottom: 82.92%;
+
+// background: #ededee;
+
+// /* Vector */
+
+// position: absolute;
+// left: 10.25%;
+// right: 85.73%;
+// top: 11.59%;
+// bottom: 82.92%;
+
+// background: #ededee;
+
+// /* Vector */
+
+// position: absolute;
+// left: 19.02%;
+// right: 76.96%;
+// top: 11.59%;
+// bottom: 82.92%;
+
+// background: #ededee;
+
+// /* Vector */
+
+// position: absolute;
+// left: 27.81%;
+// right: 68.17%;
+// top: 11.59%;
+// bottom: 82.92%;
+
+// background: #ededee;
+
+// /* Vector */
+
+// position: absolute;
+// left: 36.56%;
+// right: 59.37%;
+// top: 11.59%;
+// bottom: 82.92%;
+
+// background: #ededee;
+
+// /* Vector */
+
+// position: absolute;
+// left: 45.36%;
+// right: 50.62%;
+// top: 11.59%;
+// bottom: 82.92%;
+
+// background: #ededee;
+
+// /* Vector */
+
+// position: absolute;
+// left: 1.82%;
+// right: 94.14%;
+// top: 22.04%;
+// bottom: 72.48%;
+
+// background: #ededee;
+
+// /* Vector */
+
+// position: absolute;
+// left: 10.25%;
+// right: 85.73%;
+// top: 22.04%;
+// bottom: 72.48%;
+
+// background: #ededee;
+
+// /* Vector */
+
+// position: absolute;
+// left: 19.02%;
+// right: 76.96%;
+// top: 22.04%;
+// bottom: 72.48%;
+
+// background: #ededee;
+
+// /* Vector */
+
+// position: absolute;
+// left: 27.81%;
+// right: 68.17%;
+// top: 22.04%;
+// bottom: 72.48%;
+
+// background: #ededee;
+
+// /* Vector */
+
+// position: absolute;
+// left: 36.56%;
+// right: 59.37%;
+// top: 22.04%;
+// bottom: 72.48%;
+
+// background: #ededee;
+
+// /* Vector */
+
+// position: absolute;
+// left: 45.36%;
+// right: 50.62%;
+// top: 22.04%;
+// bottom: 72.48%;
+
+// background: #ededee;
+
+// /* Vector */
+
+// position: absolute;
+// left: 1.82%;
+// right: 94.14%;
+// top: 32.49%;
+// bottom: 62.04%;
+
+// background: #ededee;
+
+// /* Vector */
+
+// position: absolute;
+// left: 10.25%;
+// right: 85.73%;
+// top: 32.49%;
+// bottom: 62.04%;
+
+// background: #ededee;
+
+// /* Vector */
+
+// position: absolute;
+// left: 19.02%;
+// right: 76.96%;
+// top: 32.49%;
+// bottom: 62.04%;
+
+// background: #ededee;
+
+// /* Vector */
+
+// position: absolute;
+// left: 27.81%;
+// right: 68.17%;
+// top: 32.49%;
+// bottom: 62.04%;
+
+// background: #ededee;
+
+// /* Vector */
+
+// position: absolute;
+// left: 36.56%;
+// right: 59.37%;
+// top: 32.49%;
+// bottom: 62.04%;
+
+// background: #ededee;
+
+// /* Vector */
+
+// position: absolute;
+// left: 45.36%;
+// right: 50.62%;
+// top: 32.49%;
+// bottom: 62.04%;
+
+// background: #ededee;
+
+// /* Vector */
+
+// position: absolute;
+// left: 1.82%;
+// right: 94.14%;
+// top: 42.91%;
+// bottom: 51.59%;
+
+// background: #ededee;
+
+// /* Vector */
+
+// position: absolute;
+// left: 10.25%;
+// right: 85.73%;
+// top: 42.91%;
+// bottom: 51.59%;
+
+// background: #ededee;
+
+// /* Vector */
+
+// position: absolute;
+// left: 19.02%;
+// right: 76.96%;
+// top: 42.91%;
+// bottom: 51.59%;
+
+// background: #ededee;
+
+// /* Vector */
+
+// position: absolute;
+// left: 27.81%;
+// right: 68.17%;
+// top: 42.91%;
+// bottom: 51.59%;
+
+// background: #ededee;
+
+// /* Vector */
+
+// position: absolute;
+// left: 36.56%;
+// right: 59.37%;
+// top: 42.91%;
+// bottom: 51.59%;
+
+// background: #ededee;
+
+// /* Vector */
+
+// position: absolute;
+// left: 45.36%;
+// right: 50.62%;
+// top: 42.91%;
+// bottom: 51.59%;
+
+// background: #ededee;
+
+// /* En */
+
+// width: 14px;
+// height: 21px;
+
+// font-family: "Oswald";
+// font-style: normal;
+// font-weight: 400;
+// font-size: 14px;
+// line-height: 21px;
+// /* identical to box height, or 150% */
+// display: flex;
+// align-items: center;
+// text-transform: uppercase;
+
+// color: #ffffff;
+
+// /* Inside auto layout */
+// flex: none;
+// order: 1;
+// flex-grow: 0;
+
+// /* svg */
+
+// position: absolute;
+// width: 13px;
+// height: 7px;
+// left: 78px;
+// top: calc(50% - 7px / 2 + 10px);
+
+// transform: rotate(-90deg);
+
+// /* Frame */
+
+// position: absolute;
+// width: 13px;
+// height: 7px;
+// left: calc(50% - 13px / 2);
+// top: 13px;
+
+// transform: rotate(-90deg);
+
+// /* Vector */
+
+// position: absolute;
+// left: 0%;
+// right: 7.31%;
+// top: 184.29%;
+// bottom: -179.93%;
+
+// background: #ffffff;
+// transform: rotate(-90deg);
+
+// /* Group 27419 */
+
+// position: absolute;
+// width: 109px;
+// height: 48px;
+// left: 1128px;
+// top: 72px;
+
+// /* Group 27420 */
+
+// position: absolute;
+// width: 109px;
+// height: 48px;
+// left: 1128px;
+// top: 72px;
+
+// /* Group 27421 */
+
+// position: absolute;
+// width: 109px;
+// height: 48px;
+// left: 1128px;
+// top: 72px;
+
+// /* Group 17 */
+
+// position: absolute;
+// width: 109px;
+// height: 48px;
+// left: 1128px;
+// top: 72px;
+
+// /* Group 15 */
+
+// position: absolute;
+// width: 109px;
+// height: 48px;
+// left: 1128px;
+// top: 72px;
+
+// /* Group 14 */
+
+// position: absolute;
+// width: 109px;
+// height: 48px;
+// left: 1128px;
+// top: 72px;
+
+// /* Rectangle 8 */
+
+// position: absolute;
+// width: 109px;
+// height: 48px;
+// left: 1128px;
+// top: 72px;
+
+// background: linear-gradient(
+//   180deg,
+//   #dd9928 -11.46%,
+//   #ffd796 29.27%,
+//   #ffb73f 89.17%,
+//   #bb7d15 108.33%
+// );
+// border-radius: 100px;
+
+// /* Vector */
+
+// position: absolute;
+// left: 78.33%;
+// right: 14.17%;
+// top: 3.17%;
+// bottom: 96.12%;
+
+// /* golden */
+// background: linear-gradient(
+//   180deg,
+//   #ffd796 -173.83%,
+//   #dd9928 -80.73%,
+//   #bb7d15 56.19%,
+//   #774b00 100%
+// );
+// background-blend-mode: multiply;
+// mix-blend-mode: multiply;
+// opacity: 0.3;
+
+// /* Frame 7 */
+
+// /* Auto layout */
+// display: flex;
+// flex-direction: row;
+// align-items: center;
+// padding: 0px;
+// gap: 5px;
+
+// position: absolute;
+// width: 70px;
+// height: 18px;
+// left: 1147px;
+// top: 85px;
+
+// /* VIP Login */
+
+// width: 70px;
+// height: 18px;
+
+// font-family: "Arial";
+// font-style: normal;
+// font-weight: 400;
+// font-size: 16px;
+// line-height: 18px;
+
+// color: #000000;
+
+// /* Inside auto layout */
+// flex: none;
+// order: 0;
+// flex-grow: 0;
+
+// /* Group 27420 */
+
+// position: absolute;
+// width: 109px;
+// height: 48px;
+// left: 1247px;
+// top: 72px;
+
+// /* Group 27420 */
+
+// position: absolute;
+// width: 109px;
+// height: 48px;
+// left: 1247px;
+// top: 72px;
+
+// /* Group 17 */
+
+// position: absolute;
+// width: 109px;
+// height: 48px;
+// left: 1247px;
+// top: 72px;
+
+// /* Group 15 */
+
+// position: absolute;
+// width: 109px;
+// height: 48px;
+// left: 1247px;
+// top: 72px;
+
+// /* Group 14 */
+
+// position: absolute;
+// width: 109px;
+// height: 48px;
+// left: 1247px;
+// top: 72px;
+
+// /* Rectangle 8 */
+
+// position: absolute;
+// width: 109px;
+// height: 48px;
+// left: 1247px;
+// top: 72px;
+
+// /* gray */
+// background: linear-gradient(
+//   180deg,
+//   #e7e7e7 0%,
+//   #d3cfcf 34%,
+//   #beb8b8 84%,
+//   #958c8c 100%
+// );
+// border-radius: 100px;
+
+// /* Vector */
+
+// position: absolute;
+// left: 86.6%;
+// right: 5.9%;
+// top: 3.17%;
+// bottom: 96.12%;
+
+// /* golden */
+// background: linear-gradient(
+//   180deg,
+//   #ffd796 -173.83%,
+//   #dd9928 -80.73%,
+//   #bb7d15 56.19%,
+//   #774b00 100%
+// );
+// background-blend-mode: multiply;
+// mix-blend-mode: multiply;
+// opacity: 0.3;
+
+// /* Frame 7 */
+
+// /* Auto layout */
+// display: flex;
+// flex-direction: row;
+// align-items: center;
+// padding: 0px;
+// gap: 5px;
+
+// position: absolute;
+// width: 60px;
+// height: 18px;
+// left: 1271px;
+// top: 85px;
+
+// /* Register */
+
+// width: 60px;
+// height: 18px;
+
+// font-family: "Arial";
+// font-style: normal;
+// font-weight: 400;
+// font-size: 16px;
+// line-height: 18px;
+
+// color: #000000;
+
+// /* Inside auto layout */
+// flex: none;
+// order: 0;
+// flex-grow: 0;
+
+// /* Group 27422 */
+
+// position: absolute;
+// width: 492.26px;
+// height: 60px;
+// left: 84px;
+// top: 66px;
+
+// /* bATMAN LOGO 2 */
+
+// position: absolute;
+// width: 135.21px;
+// height: 60px;
+// left: 84px;
+// top: 66px;
+
+// background: url(bATMAN LOGO.png);
+
+// /* Mask group */
+
+// position: absolute;
+// width: 339.14px;
+// height: 58.65px;
+// left: 237.12px;
+// top: 66.9px;
+
+// /* Rectangle 101 */
+
+// position: absolute;
+// width: 339.14px;
+// height: 58.65px;
+// left: 237.12px;
+// top: 66.9px;
+
+// background: #d9d9d9;
+
+// /* BATMAN VIP 2 */
+
+// position: absolute;
+// width: 389.03px;
+// height: 243.15px;
+// left: 216.21px;
+// top: -25.6px;
+
+// background: url(BATMAN VIP.png);
+
+// /* Group 27423 */
+
+// position: absolute;
+// width: 221.5px;
+// height: 94.3px;
+// left: 78px;
+// top: 2574px;
+
+// /* Group 27435 */
+
+// position: absolute;
+// width: 221.5px;
+// height: 94.3px;
+// left: 78px;
+// top: 2574px;
+
+// /* bATMAN LOGO 2 */
+
+// position: absolute;
+// width: 89px;
+// height: 40px;
+// left: 144px;
+// top: 2574px;
+
+// background: url(bATMAN LOGO.png);
+
+// /* Mask group */
+
+// position: absolute;
+// width: 221.5px;
+// height: 38.3px;
+// left: 78px;
+// top: 2630px;
+
+// /* Rectangle 101 */
+
+// position: absolute;
+// width: 221.5px;
+// height: 38.3px;
+// left: 78px;
+// top: 2630px;
+
+// background: #d9d9d9;
+
+// /* BATMAN VIP 2 */
+
+// position: absolute;
+// width: 254.09px;
+// height: 158.81px;
+// left: 64.34px;
+// top: 2569.59px;
+
+// background: url(BATMAN VIP.png);
+
+// /* Group 27449 */
+
+// position: absolute;
+// width: 1440px;
+// height: 2318px;
+// left: 0px;
+// top: 760px;
+
+// /* Group 27204 */
+
+// position: absolute;
+// width: 1440px;
+// height: 2318px;
+// left: calc(50% - 1440px / 2);
+// top: 760px;
+
+// /* Rectangle 15 */
+
+// position: absolute;
+// width: 1440px;
+// height: 2318px;
+// left: 0px;
+// top: 3078px;
+
+// background: #400a05;
+// transform: matrix(1, 0, 0, -1, 0, 0);
+
+// /* Group 27314 */
+
+// position: absolute;
+// width: 1440px;
+// height: 395px;
+// left: calc(50% - 1440px / 2);
+// top: 2620px;
+
+// /* Frame 1050 */
+
+// /* Auto layout */
+// display: flex;
+// flex-direction: row;
+// justify-content: center;
+// align-items: center;
+// padding: 0px;
+// gap: 41px;
+
+// position: absolute;
+// width: 100px;
+// height: 17px;
+// left: 1112px;
+// top: 2936px;
+
+// /* Rectangle 53 */
+
+// box-sizing: border-box;
+
+// position: absolute;
+// width: 1440px;
+// height: 395px;
+// left: 0px;
+// top: 2620px;
+
+// background: #400a05;
+// border-top: 1px solid #ffffff;
+
+// /* Frame 1057 */
+
+// /* Auto layout */
+// display: flex;
+// flex-direction: column;
+// align-items: flex-start;
+// padding: 0px;
+// gap: 12px;
+
+// position: absolute;
+// width: 113px;
+// height: 114px;
+// left: 363px;
+// top: 2806px;
+
+// /* Sports */
+
+// width: 113px;
+// height: 23px;
+
+// font-family: "Arial";
+// font-style: normal;
+// font-weight: 700;
+// font-size: 20px;
+// line-height: 23px;
+// /* identical to box height */
+
+// color: #ffffff;
+
+// /* Inside auto layout */
+// flex: none;
+// order: 0;
+// align-self: stretch;
+// flex-grow: 0;
+
+// /* Group 27308 */
+
+// width: 113px;
+// height: 79px;
+
+// /* Inside auto layout */
+// flex: none;
+// order: 1;
+// flex-grow: 0;
+
+// /* Sports Betting */
+
+// position: absolute;
+// width: 89px;
+// height: 16px;
+// left: 0px;
+// top: 35px;
+
+// font-family: "Arial";
+// font-style: normal;
+// font-weight: 400;
+// font-size: 14px;
+// line-height: 16px;
+// /* identical to box height */
+
+// color: #ffffff;
+
+// /* Football Betting */
+
+// position: absolute;
+// width: 98px;
+// height: 16px;
+// left: 0px;
+// top: 56px;
+
+// font-family: "Arial";
+// font-style: normal;
+// font-weight: 400;
+// font-size: 14px;
+// line-height: 16px;
+// /* identical to box height */
+
+// color: #ffffff;
+
+// /* Live Betting */
+
+// position: absolute;
+// width: 74px;
+// height: 16px;
+// left: 0px;
+// top: 77px;
+
+// font-family: "Arial";
+// font-style: normal;
+// font-weight: 400;
+// font-size: 14px;
+// line-height: 16px;
+// /* identical to box height */
+
+// color: #ffffff;
+
+// /* Mix Parlay Betting */
+
+// position: absolute;
+// width: 113px;
+// height: 16px;
+// left: 0px;
+// top: 98px;
+
+// font-family: "Arial";
+// font-style: normal;
+// font-weight: 400;
+// font-size: 14px;
+// line-height: 16px;
+// /* identical to box height */
+
+// color: #ffffff;
+
+// /* Frame 1062 */
+
+// /* Auto layout */
+// display: flex;
+// flex-direction: column;
+// align-items: flex-start;
+// padding: 0px;
+// gap: 12px;
+
+// position: absolute;
+// width: 113px;
+// height: 117px;
+// left: 671px;
+// top: 2806px;
+
+// /* Help & Support */
+
+// width: 150px;
+// height: 23px;
+
+// font-family: "Arial";
+// font-style: normal;
+// font-weight: 700;
+// font-size: 20px;
+// line-height: 23px;
+// /* identical to box height */
+
+// color: #ffffff;
+
+// /* Inside auto layout */
+// flex: none;
+// order: 0;
+// flex-grow: 0;
+
+// /* Group 27308 */
+
+// width: 87px;
+// height: 82px;
+
+// /* Inside auto layout */
+// flex: none;
+// order: 1;
+// flex-grow: 0;
+
+// /* Contact Us */
+
+// position: absolute;
+// width: 70px;
+// height: 16px;
+// left: 0px;
+// top: 35px;
+
+// font-family: "Arial";
+// font-style: normal;
+// font-weight: 400;
+// font-size: 14px;
+// line-height: 16px;
+// /* identical to box height */
+
+// color: #ffffff;
+
+// /* Help & FAQ */
+
+// position: absolute;
+// width: 74px;
+// height: 16px;
+// left: 0px;
+// top: 56px;
+
+// font-family: "Arial";
+// font-style: normal;
+// font-weight: 400;
+// font-size: 14px;
+// line-height: 16px;
+// /* identical to box height */
+
+// color: #ffffff;
+
+// /* Privacy Policy */
+
+// position: absolute;
+// width: 87px;
+// height: 16px;
+// left: 0px;
+// top: 77px;
+
+// font-family: "Arial";
+// font-style: normal;
+// font-weight: 400;
+// font-size: 14px;
+// line-height: 16px;
+// /* identical to box height */
+
+// color: #ffffff;
+
+// /* About Us */
+
+// position: absolute;
+// width: 58px;
+// height: 16px;
+// left: 0px;
+// top: 101px;
+
+// font-family: "Arial";
+// font-style: normal;
+// font-weight: 400;
+// font-size: 14px;
+// line-height: 16px;
+// /* identical to box height */
+
+// color: #ffffff;
+
+// /* Frame 1058 */
+
+// /* Auto layout */
+// display: flex;
+// flex-direction: column;
+// align-items: flex-start;
+// padding: 0px;
+// gap: 12px;
+
+// position: absolute;
+// width: 132px;
+// height: 114px;
+// left: 363px;
+// top: 2665px;
+
+// /* Live Casino */
+
+// width: 138px;
+// height: 23px;
+
+// font-family: "Arial";
+// font-style: normal;
+// font-weight: 700;
+// font-size: 20px;
+// line-height: 23px;
+// /* identical to box height */
+
+// color: #ffffff;
+
+// /* Inside auto layout */
+// flex: none;
+// order: 0;
+// flex-grow: 0;
+
+// /* Group 27308 */
+
+// width: 132px;
+// height: 79px;
+
+// /* Inside auto layout */
+// flex: none;
+// order: 1;
+// flex-grow: 0;
+
+// /* Live Casino Betting */
+
+// position: absolute;
+// width: 121px;
+// height: 16px;
+// left: 0px;
+// top: 35px;
+
+// font-family: "Arial";
+// font-style: normal;
+// font-weight: 400;
+// font-size: 14px;
+// line-height: 16px;
+// /* identical to box height */
+
+// color: #ffffff;
+
+// /* Live Dealer Baccarat */
+
+// position: absolute;
+// width: 131px;
+// height: 16px;
+// left: 0px;
+// top: 56px;
+
+// font-family: "Arial";
+// font-style: normal;
+// font-weight: 400;
+// font-size: 14px;
+// line-height: 16px;
+// /* identical to box height */
+
+// color: #ffffff;
+
+// /* Live Dealer Rouletter */
+
+// position: absolute;
+// width: 132px;
+// height: 16px;
+// left: 0px;
+// top: 77px;
+
+// font-family: "Arial";
+// font-style: normal;
+// font-weight: 400;
+// font-size: 14px;
+// line-height: 16px;
+// /* identical to box height */
+
+// color: #ffffff;
+
+// /* Live Dealer Sic Bo */
+
+// position: absolute;
+// width: 116px;
+// height: 16px;
+// left: 0px;
+// top: 98px;
+
+// font-family: "Arial";
+// font-style: normal;
+// font-weight: 400;
+// font-size: 14px;
+// line-height: 16px;
+// /* identical to box height */
+
+// color: #ffffff;
+
+// /* Frame 1059 */
+
+// /* Auto layout */
+// display: flex;
+// flex-direction: column;
+// align-items: flex-start;
+// padding: 0px;
+// gap: 12px;
+
+// position: absolute;
+// width: 113px;
+// height: 72px;
+// left: 672px;
+// top: 2665px;
+
+// /* Games */
+
+// width: 113px;
+// height: 23px;
+
+// font-family: "Arial";
+// font-style: normal;
+// font-weight: 700;
+// font-size: 20px;
+// line-height: 23px;
+// /* identical to box height */
+
+// color: #ffffff;
+
+// /* Inside auto layout */
+// flex: none;
+// order: 0;
+// align-self: stretch;
+// flex-grow: 0;
+
+// /* Group 27308 */
+
+// width: 121px;
+// height: 37px;
+
+// /* Inside auto layout */
+// flex: none;
+// order: 1;
+// flex-grow: 0;
+
+// /* Online Games */
+
+// position: absolute;
+// width: 90px;
+// height: 16px;
+// left: 0px;
+// top: 35px;
+
+// font-family: "Arial";
+// font-style: normal;
+// font-weight: 400;
+// font-size: 14px;
+// line-height: 16px;
+// /* identical to box height */
+
+// color: #ffffff;
+
+// /* More About Games */
+
+// position: absolute;
+// width: 121px;
+// height: 16px;
+// left: 0px;
+// top: 56px;
+
+// font-family: "Arial";
+// font-style: normal;
+// font-weight: 400;
+// font-size: 14px;
+// line-height: 16px;
+// /* identical to box height */
+
+// color: #ffffff;
+
+// /* Frame 1061 */
+
+// /* Auto layout */
+// display: flex;
+// flex-direction: column;
+// align-items: flex-start;
+// padding: 0px;
+// gap: 12px;
+
+// position: absolute;
+// width: 148px;
+// height: 72px;
+// left: 962px;
+// top: 2665px;
+
+// /* Group 27313 */
+
+// width: 148px;
+// height: 72px;
+
+// /* Inside auto layout */
+// flex: none;
+// order: 0;
+// flex-grow: 0;
+
+// /* Hot Leagues */
+
+// position: absolute;
+// width: 144px;
+// height: 23px;
+// left: 0px;
+// top: 0px;
+
+// font-family: "Arial";
+// font-style: normal;
+// font-weight: 700;
+// font-size: 20px;
+// line-height: 23px;
+// /* identical to box height */
+
+// color: #ffffff;
+
+// /* Group 27308 */
+
+// position: absolute;
+// width: 148px;
+// height: 37px;
+// left: 0px;
+// top: 35px;
+
+// /* Premier League Betting */
+
+// position: absolute;
+// width: 148px;
+// height: 16px;
+// left: 0px;
+// top: 35px;
+
+// font-family: "Arial";
+// font-style: normal;
+// font-weight: 400;
+// font-size: 14px;
+// line-height: 16px;
+// /* identical to box height */
+
+// color: #ffffff;
+
+// /* EURO 2024 Fixtures */
+
+// position: absolute;
+// width: 130px;
+// height: 16px;
+// left: 0px;
+// top: 56px;
+
+// font-family: "Arial";
+// font-style: normal;
+// font-weight: 400;
+// font-size: 14px;
+// line-height: 16px;
+// /* identical to box height */
+
+// color: #ffffff;
+
+// /* Frame 1060 */
+
+// /* Auto layout */
+// display: flex;
+// flex-direction: column;
+// align-items: flex-start;
+// padding: 0px;
+// gap: 12px;
+
+// position: absolute;
+// width: 66px;
+// height: 51px;
+// left: 1287px;
+// top: 2670px;
+
+// /* Mobile */
+
+// width: 66px;
+// height: 23px;
+
+// font-family: "Arial";
+// font-style: normal;
+// font-weight: 700;
+// font-size: 20px;
+// line-height: 23px;
+// /* identical to box height */
+
+// color: #ffffff;
+
+// /* Inside auto layout */
+// flex: none;
+// order: 0;
+// flex-grow: 0;
+
+// /* Group 27308 */
+
+// width: 56px;
+// height: 16px;
+
+// /* Inside auto layout */
+// flex: none;
+// order: 1;
+// flex-grow: 0;
+
+// /* AR7 App */
+
+// position: absolute;
+// width: 56px;
+// height: 16px;
+// left: 0px;
+// top: 35px;
+
+// font-family: "Arial";
+// font-style: normal;
+// font-weight: 400;
+// font-size: 14px;
+// line-height: 16px;
+// /* identical to box height */
+
+// color: #ffffff;
+
+// /* Frame 27869 */
+
+// /* Auto layout */
+// display: flex;
+// flex-direction: row;
+// align-items: center;
+// padding: 0px;
+// gap: 41px;
+
+// position: absolute;
+// width: 273px;
+// height: 66px;
+// left: calc(50% - 273px / 2 - 0.5px);
+// top: 2982px;
+
+// /* Group 27312 */
+
+// width: 71px;
+// height: 66px;
+
+// /* Inside auto layout */
+// flex: none;
+// order: 0;
+// flex-grow: 0;
+
+// /* Facebook */
+
+// position: absolute;
+// width: 71px;
+// height: 18px;
+// left: 0px;
+// top: 48px;
+
+// font-family: "Arial";
+// font-style: normal;
+// font-weight: 400;
+// font-size: 16px;
+// line-height: 18px;
+
+// color: #ffffff;
+
+// /* image 13 */
+
+// position: absolute;
+// width: 40px;
+// height: 40px;
+// left: 15px;
+// top: 0px;
+
+// background: url(image);
+
+// /* Group 27310 */
+
+// width: 72px;
+// height: 66px;
+
+// /* Inside auto layout */
+// flex: none;
+// order: 1;
+// flex-grow: 0;
+
+// /* Instagram */
+
+// position: absolute;
+// width: 72px;
+// height: 18px;
+// left: 112px;
+// top: 48px;
+
+// font-family: "Arial";
+// font-style: normal;
+// font-weight: 400;
+// font-size: 16px;
+// line-height: 18px;
+
+// color: #ffffff;
+
+// /* Mask group */
+
+// position: absolute;
+// width: 40px;
+// height: 40px;
+// left: 128px;
+// top: 0px;
+
+// /* Ellipse 15 */
+
+// position: absolute;
+// width: 40px;
+// height: 40px;
+// left: 128px;
+// top: 0px;
+
+// background: #d9d9d9;
+
+// /* v982-d3-04 1 */
+
+// position: absolute;
+// width: 56px;
+// height: 56px;
+// left: 120px;
+// top: -8px;
+
+// background: url(v982-d3-04);
+
+// /* Group 27311 */
+
+// width: 48px;
+// height: 66px;
+
+// /* Inside auto layout */
+// flex: none;
+// order: 2;
+// flex-grow: 0;
+
+// /* Twitter */
+
+// position: absolute;
+// width: 48px;
+// height: 18px;
+// left: 225px;
+// top: 48px;
+
+// font-family: "Arial";
+// font-style: normal;
+// font-weight: 400;
+// font-size: 16px;
+// line-height: 18px;
+
+// color: #ffffff;
+
+// /* Mask group */
+
+// position: absolute;
+// width: 40px;
+// height: 40px;
+// left: 229px;
+// top: 0px;
+
+// /* Ellipse 16 */
+
+// position: absolute;
+// width: 40px;
+// height: 40px;
+// left: 229px;
+// top: 0px;
+
+// background: #d9d9d9;
+
+// /* pngegg 1 */
+
+// position: absolute;
+// width: 56px;
+// height: 56px;
+// left: 221px;
+// top: -8px;
+
+// background: url(pngegg.png);
+
+// /* @2024 Iris | All Rights Reserved */
+
+// position: absolute;
+// width: 237px;
+// height: 18px;
+// left: 78px;
+// top: 3027px;
+
+// font-family: "Arial";
+// font-style: normal;
+// font-weight: 400;
+// font-size: 16px;
+// line-height: 18px;
+
+// color: #ffffff;
+
+// /* Group 27445 */
+
+// position: absolute;
+// width: 1280px;
+// height: 436px;
+// left: 80px;
+// top: 164px;
+
+// /* Group 27298 */
+
+// position: absolute;
+// width: 1276px;
+// height: 436px;
+// left: calc(50% - 1276px / 2 + 2px);
+// top: 164px;
+
+// /* Rectangle 52 */
+
+// position: absolute;
+// width: 1276px;
+// height: 436px;
+// left: 84px;
+// top: 164px;
+
+// background: #000000;
+
+// /* Group 27297 */
+
+// position: absolute;
+// width: 621px;
+// height: 424px;
+// left: 208px;
+// top: 164px;
+
+// /* ံသာန */
+
+// position: absolute;
+// width: 72px;
+// height: 24.47px;
+// left: 503px;
+// top: 217.94px;
+
+// font-family: "Archivo Black";
+// font-style: normal;
+// font-weight: 400;
+// font-size: 24px;
+// line-height: 26px;
+
+// color: #ffffff;
+
+// /* Untitled-1 2 */
+
+// position: absolute;
+// width: 617px;
+// height: 378.35px;
+// left: 212px;
+// top: 164px;
+
+// background: url(Untitled-1.png);
+
+// /* Ellipse 10 */
+
+// position: absolute;
+// width: 441px;
+// height: 411.29px;
+// left: 218px;
+// top: 171px;
+
+// background: rgba(210, 17, 0, 0.6);
+// filter: blur(100px);
+
+// /* hero-777 1 */
+
+// position: absolute;
+// width: 548.1px;
+// height: 299.84px;
+// left: 208px;
+// top: 293.05px;
+
+// background: url(hero-777.png);
+// transform: matrix(0.99, -0.16, 0.18, 0.98, 0, 0);
+
+// /* Frame 8 */
+
+// /* Auto layout */
+// display: flex;
+// flex-direction: column;
+// align-items: center;
+// padding: 0px;
+// gap: 24px;
+
+// position: absolute;
+// width: 409px;
+// height: 149px;
+// left: 849px;
+// top: 254px;
+
+// /* Best Casino Affiliate Programs For Everyone */
+
+// width: 409px;
+// height: 132px;
+
+// font-family: "Archivo Black";
+// font-style: normal;
+// font-weight: 400;
+// font-size: 40px;
+// line-height: 44px;
+// text-align: center;
+
+// background: linear-gradient(90deg, #bb7d15 0%, #ffe8c1 54.13%, #bb7d15 99%);
+// -webkit-background-clip: text;
+// -webkit-text-fill-color: transparent;
+// background-clip: text;
+// text-fill-color: transparent;
+
+// /* Inside auto layout */
+// flex: none;
+// order: 0;
+// flex-grow: 0;
+
+// /* Rectangle 100 */
+
+// box-sizing: border-box;
+
+// position: absolute;
+// width: 1279px;
+// height: 436px;
+// left: 80px;
+// top: 164px;
+
+// /* div */
+
+// position: absolute;
+// left: 7.01%;
+// right: 89.79%;
+// top: 11.62%;
+// bottom: 86.9%;
+
+// background: url(.jpg);
+// border-radius: 100px;
+
+// /* Vector */
+
+// position: absolute;
+// width: 8.96px;
+// height: 14px;
+// left: calc(50% - 8.96px / 2 + 0.48px);
+// top: calc(50% - 14px / 2 + 0.1px);
+
+// background: #000000;
+
+// /* div */
+
+// position: absolute;
+// left: 93.12%;
+// right: 3.68%;
+// top: 13.1%;
+// bottom: 85.41%;
+
+// background: url(.jpg);
+// border-radius: 100px;
+// transform: rotate(-180deg);
+
+// /* Vector */
+
+// position: absolute;
+// width: 8.96px;
+// height: 14px;
+// left: calc(50% - 8.96px / 2 + 8.48px);
+// top: calc(50% - 14px / 2 + 13.9px);
+
+// background: #000000;
+// transform: rotate(-180deg);
+
+// /* Mask group */
+
+// position: absolute;
+// width: 1279px;
+// height: 405px;
+// left: 80px;
+// top: 2175px;
+
+// /* Rectangle 105 */
+
+// position: absolute;
+// width: 1279px;
+// height: 405px;
+// left: 80px;
+// top: 2175px;
+
+// background: #d9d9d9;
+
+// /* image 123 */
+
+// position: absolute;
+// visibility: hidden;
+// width: 1307px;
+// height: 508px;
+// left: 93px;
+// top: 2110px;
+
+// background: url(image.png);
+
+// /* image 124 */
+
+// position: absolute;
+// width: 1278px;
+// height: 508px;
+// left: 81px;
+// top: 2123px;
+
+// background: url(image.png);

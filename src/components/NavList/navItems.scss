@@ -1,0 +1,33 @@
+.items-container {
+  display: flex;
+  height: 80%;
+  align-items: center;
+  .login-nav {
+    position: relative;
+    /* Rectangle 8 */
+    width: 10.9rem;
+    height: 100%;
+    background: linear-gradient(
+      180deg,
+      #dd9928 -11.46%,
+      #ffd796 29.27%,
+      #dd9928 89.17%,
+      #bb7d15 108.33%
+    );
+    border: 1px solid var(--black);
+
+    box-shadow: inset 0px -6px 0px 0px #dd9928;
+    border-radius: 10rem;
+
+    &:hover {
+      background: linear-gradient(
+        180deg,
+        #bb7d15 -11.46%,
+        #dd9928 29.27%,
+        #ffd796 89.17%,
+        #dd9928 108.33%
+      );
+      //   background-color: #bab1ba;
+    }
+  }
+}

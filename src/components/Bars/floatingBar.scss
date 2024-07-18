@@ -1,0 +1,57 @@
+.float-bar {
+  position: relative !important;
+  width: 80% !important;
+  top: 0;
+  height: 7.8rem !important;
+  left: 10%;
+  background: linear-gradient(
+    91.85deg,
+    #f8eda1 -5.95%,
+    #b49152 23.07%,
+    #c3a768 44.11%,
+    #f8eda1 88.3%,
+    #644d32 102.63%,
+    #705839 102.63%
+  );
+  border: 1px solid #000000;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+
+  .btn-vip,
+  .btn-play {
+    /* Rectangle 11 */
+    /* PLAY NOW */
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 2.3rem;
+    text-align: center;
+    color: #ffe1a5;
+    box-sizing: border-box;
+    width: 10rem;
+    height: 3.33rem;
+    border: 2px solid;
+    background: linear-gradient(
+      174.43deg,
+      #972128 6.22%,
+      #520f18 37.86%,
+      #b02231 62.92%,
+      #831822 83.43%,
+      #5f1115 104.51%
+    );
+    border-radius: 10rem;
+
+    &:hover {
+      background: linear-gradient(
+        174.43deg,
+        #5f1115 6.22%,
+        #831822 37.86%,
+        #b02231 62.92%,
+        #520f18 83.43%,
+        #972128 104.51%
+      );
+    }
+  }
+}
