@@ -1,0 +1,7 @@
+.boxes {
+  margin: 1.6rem 2.4rem;
+  display: grid;
+
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+}

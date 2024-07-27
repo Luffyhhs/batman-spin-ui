@@ -13,7 +13,7 @@ const login = async (user, api) => {
   }
   return response.data;
 };
-const getSpin = async (api) => {
+const getSpinTime = async (api) => {
   const response = await axios.get(`${base_url}${api}`, config);
   console.log(response);
   return response.data;
@@ -26,7 +26,7 @@ const getRandomLucky = async (api) => {
 
 const authService = {
   login,
-  getSpin,
+  getSpinTime,
   getRandomLucky,
 };
 

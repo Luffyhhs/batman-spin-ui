@@ -34,13 +34,12 @@ export const getSpin = createAsyncThunk(
   "auth/getSpin",
   async ({ api }, thunkApi) => {
     try {
-      const response = await authService.getSpin(api);
-      // console.log(response);
+      const response = await authService.getSpinTime(api);
+      console.log(response);
       // Transform response to only include serializable data
       const serializableData = {
         spin: response, // assuming response.data is the spin value
       };
-      console.log(response);
       if (response.status == "failed") {
         return thunkApi.rejectWithValue(response.message);
       }

@@ -2,8 +2,8 @@
   --text-color: #231f20;
   --black: #1c1917;
   --gray: #a4a3a3;
-  --secondary-gray: #9a9a9a6b;
-  --primary: #3730a3;
+  --secondary-gray: #eeeeee;
+  --primary: #400a05;
   --secondary: #22d3ee;
   --white: #ffffff;
   --success: #4ade80;
@@ -54,4 +54,35 @@ body {
   position: absolute;
   width: 95%;
   height: 7.2rem;
+}
+
+.rounded-img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.grid {
+  display: grid;
+  gap: 0.6rem;
+}
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.grid-pos-2 {
+  grid-column: 2;
+}
+.grid-pos-3 {
+  grid-column: 3;
+}
+.grid-pos-4 {
+  grid-column: 4;
 }

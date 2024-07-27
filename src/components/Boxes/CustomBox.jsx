@@ -2,8 +2,23 @@ import React from "react";
 import * as bs from "react-icons/bs";
 import "./customBox.scss";
 import Box from "./Box";
+import FishingBox from "./FishingBox";
 
 const CustomBox = (props) => {
+  const mapFunction = (items, box) => {
+    return items.map((item, index) =>
+      box === "box" ? (
+        <Box item={item} key={index} />
+      ) : (
+        <FishingBox item={item} key={index} />
+      )
+    );
+  };
+  const renderBox = (items) => {
+    return items?.length > 3
+      ? mapFunction(items, "fishBox")
+      : mapFunction(items, "box");
+  };
   return (
     <>
       <div
@@ -14,9 +29,7 @@ const CustomBox = (props) => {
         }}
       >
         {props?.title !== undefined && (
-          <div
-            className={`${props?.className ? "box-bar bar-vip" : "box-bar"}`}
-          >
+          <div className={`${props?.bgImg ? "box-bar bar-vip" : "box-bar"}`}>
             <h4
               className={`${
                 props?.bgImg ? "box-bar--title title-vip" : "box-bar--title"
@@ -35,8 +48,7 @@ const CustomBox = (props) => {
           </div>
         )}
         <div className="games">
-          {props?.items !== undefined &&
-            props?.items.map((item) => <Box item={item} />)}
+          {props.items !== undefined && renderBox(props.items)}
         </div>
       </div>
     </>

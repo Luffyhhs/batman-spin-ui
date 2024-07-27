@@ -1,9 +1,15 @@
 import React from "react";
 
 const CustomButton = (props) => {
+  const handleClick = () => {
+    props?.onClickFun();
+  };
+
   return (
     <>
-      <button className={props.className}>{props.text}</button>
+      <button onClick={handleClick} className={props.className}>
+        {props.text}
+      </button>
     </>
   );
 };

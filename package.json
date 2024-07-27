@@ -12,6 +12,7 @@
 	"dependencies": {
 		"@reduxjs/toolkit": "^2.2.5",
 		"@vitejs/plugin-react": "^4.2.1",
+		"antd": "^5.19.3",
 		"axios": "^1.7.2",
 		"dotenv": "^16.4.5",
 		"embla-carousel-autoplay": "^8.1.3",

@@ -15,6 +15,7 @@ export const fetchAdsList = createAsyncThunk(
   "wheel/fetchAdsList",
   async ({ api }) => {
     const data = await getData(api);
+    console.log(data);
     return data;
   }
 );
@@ -24,7 +25,6 @@ export const fetchWheelImg = createAsyncThunk(
   async ({ api }, thunkApi) => {
     try {
       const data = await getData(api);
-      console.log(data);
       if (data.status === "failed") {
         return thunkApi.rejectWithValue(data.message);
       }

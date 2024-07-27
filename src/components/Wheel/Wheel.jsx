@@ -22,7 +22,7 @@ const Wheel = () => {
   const luckyObj = useSelector(selectLuckyObj);
   const updateLuckyStatus = useSelector(selectUpdateLuckyStatus);
   const updateLuckyError = useSelector(selectUpdateLuckyError);
-
+  console.log(wheelObj);
   const deg = useSelector(selectDeg);
   // const deg = useSelector();
   updateLuckyError !== "" && console.log(updateLuckyError);

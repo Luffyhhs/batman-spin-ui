@@ -27,3 +27,22 @@ export const slot = [
     img: "/imgs/Jili.png",
   },
 ];
+
+export const fishing = [
+  {
+    name: "Arcade Fishing",
+    img: "/imgs/ArcadeFishing.png",
+  },
+  {
+    name: "Real Monster Fishing",
+    img: "/imgs/RealMonsterFishing.png",
+  },
+  {
+    name: "Naga Fishing World",
+    img: "/imgs/NagaFishingWorld.png",
+  },
+  {
+    name: "Sign Up First & Login",
+    img: "/imgs/TinyFishing.png",
+  },
+];
