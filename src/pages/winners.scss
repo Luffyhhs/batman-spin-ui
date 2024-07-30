@@ -1,5 +1,50 @@
-// .main-section {
-//   width: 100vw;
-//   position: relative;
-//   height: auto;
-// }
+.winners {
+  padding: 0 2rem;
+  color: var(--white);
+  .box {
+    height: 25rem;
+  }
+  .table-title {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+  }
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.2rem;
+    tr {
+      th {
+        font-size: 1.8rem;
+        font-weight: 400;
+      }
+      td {
+        font-size: 1.4rem;
+      }
+      th,
+      td {
+        text-align: center;
+        position: relative;
+        z-index: 0;
+        padding: 0.5rem;
+        // border-image: 1;
+        &:before {
+          content: "";
+          position: absolute;
+          z-index: -1;
+          inset: 0;
+          padding: 1px;
+          //   border-radius: 15px;
+          background: linear-gradient(to right, #be9b44, #ffffb1, #be9b44);
+          -webkit-mask: linear-gradient(#ffffb1 0 0) content-box,
+            linear-gradient(#ffffb1 0 0);
+          mask: linear-gradient(#ffffb1 0 0) content-box,
+            linear-gradient(#ffffb1 0 0);
+          -webkit-mask-composite: xor;
+          mask-composite: exclude;
+        }
+      }
+    }
+  }
+}

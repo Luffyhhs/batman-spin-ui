@@ -1,5 +1,6 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import authService from "./AuthServices";
+import { getDataWithToken } from "../../../services/api";
 
 const getUserFromLocalStorage = localStorage.getItem("user")
   ? JSON.parse(localStorage.getItem("user"))
@@ -34,16 +35,18 @@ export const getSpin = createAsyncThunk(
   "auth/getSpin",
   async ({ api }, thunkApi) => {
     try {
-      const response = await authService.getSpinTime(api);
+      const response = await getDataWithToken(api);
       console.log(response);
-      // Transform response to only include serializable data
-      const serializableData = {
-        spin: response, // assuming response.data is the spin value
-      };
       if (response.status == "failed") {
         return thunkApi.rejectWithValue(response.message);
       }
-      return serializableData;
+      return response;
+      // // Transform response to only include serializable data
+      // const serializableData = {
+      //   spin: response, // assuming response.data is the spin value
+      // };
+
+      // return serializableData;
     } catch (error) {
       return thunkApi.rejectWithValue(error);
     }
@@ -73,7 +76,7 @@ const authSlice = createSlice({
       })
       .addCase(getSpin.fulfilled, (state, action) => {
         state.spinStatus = "success";
-        state.spin = action.payload.spin;
+        state.spin = action.payload.spinTime;
       })
       .addCase(getSpin.rejected, (state, action) => {
         state.spinStatus = "fail";

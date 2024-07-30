@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import { getData } from "../../services/api";
+import { getData, getDataWithToken } from "../../services/api";
 import { config } from "../../Utils/axiosconfig";
 import { base_url } from "../../Utils/baseUrl";
 import axios from "axios";
@@ -28,6 +28,7 @@ export const fetchWheelImg = createAsyncThunk(
       if (data.status === "failed") {
         return thunkApi.rejectWithValue(data.message);
       }
+      console.log(data);
       return data;
     } catch (error) {
       return thunkApi.rejectWithValue(error);
@@ -39,15 +40,13 @@ export const getRandomLucky = createAsyncThunk(
   "wheel/getRandomLucky",
   async ({ api }, thunkApi) => {
     try {
-      const response = await axios.get(`${base_url}${api}`, config);
+      // const response = await axios.get(`${base_url}${api}`, config);
+      const response = await getDataWithToken(api);
       // Transform response to only include serializable data
-      const serializableData = {
-        data: response.data,
-        status: response.status,
-        statusText: response.statusText,
-      };
-      // console.log(serializableData);
-      return serializableData;
+      if (response.status === "failed") {
+        return thunkApi.rejectWithValue(response.message);
+      }
+      return response;
     } catch (error) {
       return thunkApi.rejectWithValue(error);
     }
@@ -132,8 +131,9 @@ const wheelSlice = createSlice({
       })
       .addCase(getRandomLucky.fulfilled, (state, action) => {
         state.luckyStatus = "success";
-        state.luckyObj = action.payload.data.updatedLucky;
-        state.deg = action.payload.data.deg;
+        console.log(action.payload);
+        state.luckyObj = action.payload.updatedLucky;
+        state.deg = action.payload.deg;
       })
       .addCase(getRandomLucky.rejected, (state, action) => {
         state.luckyStatus = "fail";
