@@ -1,7 +1,8 @@
 import React from "react";
 
 const CustomButton = (props) => {
-  const handleClick = () => {
+  const handleClick = (e) => {
+    e.preventDefault();
     props?.onClickFun();
   };
 

@@ -4,4 +4,7 @@
   padding: 1.6rem 0;
   align-items: center;
   justify-content: space-between;
+  @media only screen and (max-width: 31.25em) {
+    justify-content: space-evenly;
+  }
 }

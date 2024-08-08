@@ -3,6 +3,9 @@
   color: var(--white);
   .box {
     height: 25rem;
+    @media only screen and (max-width: 31.25em) {
+      height: 23rem;
+    }
   }
   .table-title {
     text-align: center;
