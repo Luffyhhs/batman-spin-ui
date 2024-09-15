@@ -10,7 +10,7 @@ const initialState = {
   user: getUserFromLocalStorage,
   loginStatus: "",
   message: "",
-  spin: 0,
+  spin: null,
   spinStatus: "",
   spinError: "",
 };

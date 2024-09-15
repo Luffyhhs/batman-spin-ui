@@ -1,4 +1,3 @@
-import React from "react";
 import "./wheel.scss";
 import { useDispatch, useSelector } from "react-redux";
 import {
@@ -15,7 +14,7 @@ import {
 import { useEffect } from "react";
 import { selectSpin } from "../../app/slices/auth/AuthSlice";
 
-const Wheel = () => {
+const Wheel = ({ handleShow }) => {
   const dispatch = useDispatch();
   const [wheelObj] = useSelector(selectWheelArr);
   const wheelStatus = useSelector(selectWheelStatus);
@@ -26,7 +25,7 @@ const Wheel = () => {
   const spinTime = useSelector(selectSpin);
 
   const deg = useSelector(selectDeg);
-  console.log(deg, luckyObj);
+  console.log(spinTime, deg, luckyObj);
   // const deg = useSelector();
   updateLuckyError !== "" && console.log(updateLuckyError);
   useEffect(() => {
@@ -64,17 +63,19 @@ const Wheel = () => {
 
   const handleAnimateEnd = (e) => {
     e.preventDefault();
+    console.log(e);
+    handleShow();
   };
   return (
     <>
       <div className="wheel-wrapper">
         <div className="wheel-container">
           {wheelStatus == "fail" && <div>{wheelError}</div>}
-          <div className="wheel" onAnimationEnd={handleAnimateEnd}>
+          <div className="wheel" onTransitionEnd={handleAnimateEnd}>
             <img src={wheelObj?.url} alt="Spin Wheel" className="wheel-img" />
           </div>
           <img src={"/imgs/Pointer.png"} alt="Pointer" className="pointer" />
-          {deg > 0 ? (
+          {spinTime > 0 ? (
             <button className="spin-btn" onClick={handleSpin}></button>
           ) : (
             <button className="spin-btn disable" disabled></button>

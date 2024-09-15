@@ -10,6 +10,7 @@ const CustomButton = (props) => {
     <>
       <button onClick={handleClick} className={props.className}>
         {props.text}
+        {props?.icon}
       </button>
     </>
   );

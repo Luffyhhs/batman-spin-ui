@@ -21,7 +21,7 @@ export const getDataWithToken = async (api) => {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${token}`,
+        Authorization: `Bearer ${JSON.parse(localStorage.getItem("token"))}`,
       },
     });
     // if (!response.ok) {

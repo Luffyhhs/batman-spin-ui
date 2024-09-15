@@ -2,7 +2,15 @@ import { Fragment } from "react";
 import ReactDOM from "react-dom";
 import "./modal.scss";
 const Backdrop = (props) => {
-  return <div className="backdrop" onClick={props.onClose}></div>;
+  return (
+    <div
+      className="backdrop"
+      onClick={() => {
+        props.onClose();
+        window.location.reload();
+      }}
+    ></div>
+  );
 };
 const ModalOverlay = (props) => {
   return (

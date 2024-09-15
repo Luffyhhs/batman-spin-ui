@@ -11,12 +11,15 @@ import FooterCom from "./Footer/FooterCom";
 import { getSpin, selectLoginUser } from "../app/slices/auth/AuthSlice";
 
 const Layout = (props) => {
+  const token = localStorage.getItem("token")
+    ? JSON.parse(localStorage.getItem("token"))
+    : null;
   const dispatch = useDispatch();
   const imgArr = useSelector(selectAdsList);
   const loginUser = useSelector(selectLoginUser);
   useEffect(() => {
     dispatch(fetchAdsList({ api: "ads" }));
-    loginUser !== null && dispatch(getSpin({ api: "user/getSpin" }));
+    loginUser !== null && token && dispatch(getSpin({ api: "user/getSpin" }));
   }, []);
   return (
     <>
