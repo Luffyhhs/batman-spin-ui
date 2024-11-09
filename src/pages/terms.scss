@@ -1,0 +1,19 @@
+.terms {
+  //   max-width: 100%;
+  // border: 2px solid var(--wheel-secondary);
+  color: var(--white);
+  margin: 0 2rem;
+  padding: 2rem 2rem 0.5rem;
+  font-size: 1.8rem;
+  transition: all 0.5s;
+  border: 2px solid var(--wheel-secondary);
+  background-size: 100% 100%;
+  &-text {
+    word-wrap: break-word;
+    line-height: 1.8;
+    &:not(:last-child) {
+      margin-bottom: 1.2rem;
+      // border-bottom: 2px solid var(--wheel-secondary);
+    }
+  }
+}

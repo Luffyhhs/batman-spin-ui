@@ -2,7 +2,7 @@ import React from "react";
 import "./floatingBar.scss";
 import CustomButton from "../Buttons/CustomButton";
 import { useNavigate } from "react-router";
-const FloatingBar = () => {
+const FloatingBar = ({ hideRecent = false }) => {
   const nav = useNavigate();
   const playNow = () => {
     nav("/wheel");
@@ -17,11 +17,13 @@ const FloatingBar = () => {
         className={`btn btn-play`}
         onClickFun={playNow}
       />
-      <CustomButton
-        text="Recent Winners"
-        className={`btn btn-vip`}
-        onClickFun={winnerList}
-      />
+      {!hideRecent && (
+        <CustomButton
+          text="Recent Winners"
+          className={`btn btn-vip`}
+          onClickFun={winnerList}
+        />
+      )}
     </div>
   );
 };

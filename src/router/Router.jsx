@@ -5,6 +5,7 @@ const Layout = Loadable(lazy(() => import("../components/Layout")));
 const Landing = Loadable(lazy(() => import("../pages/Landing")));
 const Main = Loadable(lazy(() => import("../pages/Main")));
 const Winners = Loadable(lazy(() => import("../pages/Winners")));
+const Terms = Loadable(lazy(() => import("../pages/Terms")));
 // const { Spin } = Loadable(lazy(() => import("antd/lib/spin")));
 const Router = () => {
   return (
@@ -14,6 +15,7 @@ const Router = () => {
           <Route index element={<Landing />} />
           <Route path="wheel" element={<Main />} />
           <Route path="winners" element={<Winners />} />
+          <Route path="policies" element={<Terms />} />
         </Route>
       </Routes>
     </BrowserRouter>

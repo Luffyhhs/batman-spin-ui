@@ -415,42 +415,42 @@
 
   .pointer {
     position: absolute;
-    top: 48%;
+    top: 45%;
     left: 5%;
-    max-width: 6rem;
-    max-height: 6rem;
+    max-width: 8rem;
+    max-height: 8rem;
     z-index: 10;
     @media only screen and (max-width: 18.75em) {
       max-width: 4rem;
       max-height: 4rem;
     }
     @media only screen and (min-width: 37.5em) {
-      left: 29%;
-      max-width: 4rem;
-      max-height: 4rem;
+      left: 22%;
+      max-width: 8rem;
+      max-height: 8rem;
     }
 
     @media only screen and (max-width: 75em) {
-      left: 25%;
+      left: 19%;
     }
     @media only screen and (max-width: 64em) {
-      left: 30%;
+      left: 23%;
     }
     @media only screen and (max-width: 60.75em) {
-      left: 25%;
-      max-width: 4rem;
-      max-height: 4rem;
+      left: 20%;
+      max-width: 7rem;
+      max-height: 7rem;
     }
     @media only screen and (max-width: 43.75em) {
-      left: 25%;
+      left: 18%;
     }
     @media only screen and (max-width: 37.5em) {
-      left: 2%;
-      max-width: 6rem;
-      max-height: 6rem;
+      left: -5%;
+      max-width: 8rem;
+      max-height: 8rem;
     }
     @media only screen and (min-width: 90em) {
-      left: 30%;
+      left: 22%;
     }
     // @media only screen and (max-width: 43.75em) {
     //   left: 5%;

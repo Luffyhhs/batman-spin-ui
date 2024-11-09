@@ -23,6 +23,6 @@ export const Sport = [
 export const HelpSupport = [
   { text: "Contact Us" },
   { text: "Help & FAQ" },
-  { text: "Privacy Policy" },
+  { text: "Privacy Policy", click: "policies" },
   { text: "About Us" },
 ];

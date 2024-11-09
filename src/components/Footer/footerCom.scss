@@ -6,6 +6,8 @@
   .items {
     padding-top: 2rem;
     color: var(--white);
+    display: flex;
+    flex-direction: column;
     &:last-child {
       justify-self: center;
     }
@@ -17,16 +19,22 @@
       margin-bottom: 0.8rem;
       text-wrap: nowrap;
       @media only screen and (max-width: 30em) {
+        font-size: 1.2rem;
         text-wrap: wrap;
       }
     }
     span {
+      cursor: pointer;
+
       display: inline-block;
       font-size: 1.2rem;
       text-wrap: nowrap;
       margin-bottom: 0.4rem;
       &:last-of-type {
         margin-bottom: 0;
+      }
+      &:hover {
+        text-decoration: underline;
       }
       @media only screen and (max-width: 30em) {
         text-wrap: wrap;

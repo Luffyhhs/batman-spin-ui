@@ -8,7 +8,10 @@ import ShowPrize from "../components/Modal/ShowPrize";
 import CustomButton from "../components/Buttons/CustomButton";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import "./main.scss";
+import { Tabs } from "antd";
 import { useNavigate } from "react-router";
+import LuckyCards from "../components/LuckyCards/LuckyCards";
+import FloatingBar from "../components/Bars/FloatingBar";
 
 const Main = () => {
   const dispatch = useDispatch();
@@ -43,6 +46,27 @@ const Main = () => {
           onClickFun={() => nav("/winners")}
         />
       </div>
+      {/* <Tabs
+        items={[
+          {
+            key: 1,
+            label: "Wheel",
+            children: ,
+          },
+          {
+            key: 2,
+            label: "Card",
+            children: <LuckyCards />,
+          },
+        ]}
+        type="card"
+        // indicator={{ align: "end" }}
+        size="large"
+        centered={true}
+        tabBarGutter={10}
+        defaultActiveKey="1"
+      /> */}
+      <FloatingBar hideRecent={true} />
       <Wheel handleShow={onShow} />
     </section>
   );

@@ -1,9 +1,10 @@
 .float-bar {
   position: relative !important;
-  width: 80% !important;
+  width: auto !important;
   top: 0;
+  margin: 0 0.5rem;
   height: 7.8rem !important;
-  left: 10%;
+  // left: 10%;
   background: linear-gradient(
     91.85deg,
     #f8eda1 -5.95%,
@@ -30,8 +31,8 @@
     text-align: center;
     color: #ffe1a5;
     box-sizing: border-box;
-    width: 10rem;
-    height: 3.33rem;
+    width: 22rem;
+    height: 5rem;
     border: 2px solid;
     background: linear-gradient(
       174.43deg,

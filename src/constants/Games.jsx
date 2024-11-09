@@ -1,15 +1,21 @@
 export const vip = [
   {
-    name: "Live22SM",
+    name: "Wheel of Fortune",
     img: "/imgs/live22.png",
+    click: "wheel",
+    available: true,
   },
   {
-    name: "Pragmatic Play",
+    name: "Tarots of Fortune",
     img: "/imgs/Pragmatic.png",
+    click: "tarots",
+    available: false,
   },
   {
-    name: "Jili",
+    name: "Lottery",
     img: "/imgs/Jili.png",
+    click: "lottery",
+    available: false,
   },
 ];
 

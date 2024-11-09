@@ -62,7 +62,7 @@ const Winners = () => {
             onClickFun={() => nav("/wheel")}
           />
         </div>
-        <CustomBox items={slot} />
+        {/* <CustomBox items={slot} /> */}
         <p className="table-title">Top Winner List</p>
         <Table tHead={tableHeadData} tBody={top10Body} />
         <p className="table-title">More Winner List</p>

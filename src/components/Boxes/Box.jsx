@@ -1,8 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Box = ({ item }) => {
+  const nav = useNavigate();
   return (
-    <div className="game">
+    <div
+      className="game"
+      onClick={item?.click ? () => nav(item.click) : () => {}}
+    >
       <div
         className="game-img"
         style={{

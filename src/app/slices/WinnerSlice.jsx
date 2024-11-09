@@ -18,7 +18,7 @@ export const fetchTopWinner = createAsyncThunk(
       if (data.status === "failed") {
         return thunkApi.rejectWithValue(data.message);
       }
-      console.log(data);
+      // console.log(data);
       return data;
     } catch (error) {
       return thunkApi.rejectWithValue(error);
@@ -33,7 +33,7 @@ export const fetchMoreWinner = createAsyncThunk(
       if (data.status === "failed") {
         return thunkApi.rejectWithValue(data.message);
       }
-      console.log(data);
+      // console.log(data);
       return data;
     } catch (error) {
       return thunkApi.rejectWithValue(error);

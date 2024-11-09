@@ -47,16 +47,16 @@ const FooterCom = () => {
             <div className="icons-box">
               <RoundedIconWithImg
                 className={"rounded-img"}
-                bg={"/imgs/instagram.png"}
+                bg={"/imgs/telegram.png"}
               />
-              <p>Instagram</p>
+              <p>Telegram</p>
             </div>
             <div className="icons-box">
               <RoundedIconWithImg
                 className={"rounded-img"}
-                bg={"/imgs/twitter.png"}
+                bg={"/imgs/viber.png"}
               />
-              <p>Twitter</p>
+              <p>Viber</p>
             </div>
           </div>
         </div>
