@@ -1,8 +1,11 @@
 import React from "react";
 import Modal from "./Modal";
 import "./showPrize.scss";
+import { useSelector } from "react-redux";
+import { selectLuckyObj } from "../../app/slices/WheelSlice";
 
 const ShowPrize = (props) => {
+  const luckyObj = useSelector(selectLuckyObj);
   return (
     <Modal onClose={props.onClose}>
       <div className="popup">

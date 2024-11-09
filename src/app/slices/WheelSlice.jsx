@@ -131,7 +131,7 @@ const wheelSlice = createSlice({
       })
       .addCase(getRandomLucky.fulfilled, (state, action) => {
         state.luckyStatus = "success";
-        console.log(action.payload);
+        // console.log(action.payload);
         state.luckyObj = action.payload.updatedLucky;
         state.deg = action.payload.deg;
       })
