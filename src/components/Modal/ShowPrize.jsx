@@ -13,11 +13,13 @@ const ShowPrize = (props) => {
         <div className="popup-detail">
           <div className="popup-detail-box">
             <span>Reward</span>
-            <div className="popup-detail-box-item">{"demo"}</div>
+            <div className="popup-detail-box-item">
+              {luckyObj?.reward?.name}
+            </div>
           </div>
           <div className="popup-detail-box">
-            <span>Lucky id.</span>
-            <div className="popup-detail-box-item">{"demo"}</div>
+            <span>Lucky Code</span>
+            <div className="popup-detail-box-item">{luckyObj?.code}</div>
           </div>
         </div>
         {/*<div className="reward-img">
