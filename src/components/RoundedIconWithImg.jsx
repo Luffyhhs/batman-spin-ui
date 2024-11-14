@@ -8,6 +8,7 @@ const RoundedIconWithImg = (props) => {
         backgroundImage: `url(${props.bg})`,
         backgroundSize: "100% 100%",
       }}
+      onClick={props?.link ? () => window.open(props.link) : () => {}}
     ></div>
   );
 };

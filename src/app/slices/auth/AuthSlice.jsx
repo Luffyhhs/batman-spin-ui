@@ -20,7 +20,7 @@ export const login = createAsyncThunk(
   async ({ api, userData }, thunkApi) => {
     try {
       const data = await authService.login(userData, api);
-      console.log(data);
+      // console.log(data);
       if (data?.status === "failed") {
         return thunkApi.rejectWithValue(data.message);
       }
@@ -36,7 +36,7 @@ export const getSpin = createAsyncThunk(
   async ({ api }, thunkApi) => {
     try {
       const response = await getDataWithToken(api);
-      console.log(response);
+      // console.log(response);
       if (response.status == "failed") {
         return thunkApi.rejectWithValue(response.message);
       }

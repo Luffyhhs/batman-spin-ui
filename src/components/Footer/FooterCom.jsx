@@ -19,46 +19,81 @@ const FooterCom = () => {
   return (
     <>
       <footer className="footer">
-        <GridBox className={"grid grid-5"}>
+        <GridBox className={"flex footer-icons"}>
           <NavBarLogo className={"footer-logo-container"} />
-          <ItemsBox title={"Live Casino"} items={LiveCasino} />
+          <div className="icons">
+            <div className="flex gap-2">
+              <div className="icons-box">
+                <p className="">Iris</p>
+                <RoundedIconWithImg
+                  className={"rounded-img"}
+                  bg={"/imgs/facebook.png"}
+                  link={"https://www.facebook.com/slots.iris"}
+                />
+              </div>
+              <div className="icons-box">
+                <p className="">Iris</p>
+                <RoundedIconWithImg
+                  className={"rounded-img"}
+                  bg={"/imgs/telegram.png"}
+                  link={"https://t.me/irisslot"}
+                />
+              </div>
+              <div className="icons-box">
+                <p className="">Iris</p>
+                <RoundedIconWithImg
+                  className={"rounded-img"}
+                  bg={"/imgs/viber.png"}
+                  link={"https://msng.link/o?959969000045=vi"}
+                />
+              </div>
+            </div>
+            <div className="flex gap-2">
+              <div className="icons-box">
+                <p className="">Queen</p>
+                <RoundedIconWithImg
+                  className={"rounded-img"}
+                  bg={"/imgs/facebook.png"}
+                  link={"https://www.facebook.com/slotqueen007"}
+                />
+              </div>
+              <div className="icons-box">
+                <p className="">Queen</p>
+                <RoundedIconWithImg
+                  className={"rounded-img"}
+                  bg={"/imgs/telegram.png"}
+                  link={"https://t.me/slotqueen007"}
+                />
+              </div>
+              <div className="icons-box">
+                <p className="">Queen</p>
+                <RoundedIconWithImg
+                  className={"rounded-img"}
+                  bg={"/imgs/viber.png"}
+                  link={"https://msng.link/o?959969000018=vi"}
+                />
+              </div>
+            </div>
+          </div>
+        </GridBox>
+        <GridBox className={"grid grid-3"}>
+          <ItemsBox
+            title={"Live Casino"}
+            items={LiveCasino}
+            // className={"grid-pos-2"}
+          />
           <ItemsBox title={"Games"} items={Games} />
           <ItemsBox title={"Hot Leagues"} items={HotLeagues} />
           <ItemsBox title={"Mobile"} items={Mobile} />
-        </GridBox>
-        <GridBox className={"grid grid-5"}>
-          <ItemsBox title={"Sports"} items={Sport} className={"grid-pos-2"} />
+          <ItemsBox title={"Sports"} items={Sport} />
           <ItemsBox
             title={"Help & Support"}
             items={HelpSupport}
-            className={"grid-pos-3"}
+            // className={"grid-pos-3"}
           />
         </GridBox>
         <div className="redirect grid grid-3">
           <p className="copy-right">{`@${date.getFullYear()} Iris | All Rights Reserved`}</p>
-          <div className="icons">
-            <div className="icons-box">
-              <RoundedIconWithImg
-                className={"rounded-img"}
-                bg={"/imgs/facebook.png"}
-              />
-              <p>Facebook</p>
-            </div>
-            <div className="icons-box">
-              <RoundedIconWithImg
-                className={"rounded-img"}
-                bg={"/imgs/telegram.png"}
-              />
-              <p>Telegram</p>
-            </div>
-            <div className="icons-box">
-              <RoundedIconWithImg
-                className={"rounded-img"}
-                bg={"/imgs/viber.png"}
-              />
-              <p>Viber</p>
-            </div>
-          </div>
         </div>
       </footer>
     </>

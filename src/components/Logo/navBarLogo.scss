@@ -9,12 +9,13 @@
 }
 .footer-logo-container {
   display: flex;
+  max-width: 100%;
   flex-direction: column;
   gap: 0.8rem;
-  height: 80%;
+  height: 8rem;
   align-items: center;
   padding-top: 2rem;
   img {
-    height: 15%;
+    height: 50%;
   }
 }

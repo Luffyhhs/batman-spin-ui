@@ -12,7 +12,7 @@ export const HotLeagues = [
   { text: "EURO 2024 Fixtures" },
 ];
 
-export const Mobile = [{ text: "Ar7 App" }];
+export const Mobile = [{ text: "BatmanVip App" }];
 export const Sport = [
   { text: "Sports Betting" },
   { text: "Football Betting" },

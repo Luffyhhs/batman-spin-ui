@@ -12,7 +12,17 @@ const FishingBox = ({ item }) => {
         }}
       ></div>
       {item?.name && <p className="f-game--name game-name">{item.name}</p>}
-      <CustomButton text="Play Now" className="f-game--button game-button" />
+      <CustomButton
+        text="Play Now"
+        className="f-game--button game-button"
+        onClickFun={() => {
+          const anchor = document.createElement("a");
+          anchor.href = item.link;
+          // anchor.target = "_blank";
+          anchor.rel = "noopener noreferrer";
+          anchor.click();
+        }}
+      />
     </div>
   );
 };

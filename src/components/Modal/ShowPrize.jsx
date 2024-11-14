@@ -6,6 +6,7 @@ import { selectLuckyObj } from "../../app/slices/WheelSlice";
 
 const ShowPrize = (props) => {
   const luckyObj = useSelector(selectLuckyObj);
+  console.log(luckyObj);
   return (
     <Modal onClose={props.onClose}>
       <div className="popup">

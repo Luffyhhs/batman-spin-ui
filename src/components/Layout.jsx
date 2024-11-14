@@ -5,12 +5,13 @@ import NavBar from "./Bars/NavBar";
 import Carousel from "./Carousel/Carousel";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchAdsList, selectAdsList } from "../app/slices/WheelSlice";
-import { Outlet } from "react-router";
+import { Outlet, useLocation } from "react-router";
 import SpinItBox from "./Boxes/SpinItBox";
 import FooterCom from "./Footer/FooterCom";
 import { getSpin, selectLoginUser } from "../app/slices/auth/AuthSlice";
 
 const Layout = (props) => {
+  const location = useLocation();
   const token = localStorage.getItem("token")
     ? JSON.parse(localStorage.getItem("token"))
     : null;
@@ -21,18 +22,19 @@ const Layout = (props) => {
     dispatch(fetchAdsList({ api: "ads" }));
     loginUser !== null && token && dispatch(getSpin({ api: "user/getSpin" }));
   }, []);
+  console.log(location);
   return (
     <>
       <div className="layout">
         <div className="main-container">
           <header className="header">
-            <TopBar />
+            {/* <TopBar /> */}
             <NavBar />
             <Carousel imgArr={imgArr.data} />
           </header>
           <main className="content">
             <Outlet />
-            <SpinItBox />
+            {location.pathname !== "/winners" && <SpinItBox />}
           </main>
           <FooterCom />
         </div>

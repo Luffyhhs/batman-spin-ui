@@ -48,7 +48,7 @@ const winnerSlice = createSlice({
   extraReducers: (builder) => {
     builder
       .addCase(fetchTopWinner.fulfilled, (state, action) => {
-        state.top10Status = "succeed";
+        state.top10Status = "success";
         state.top10List = action.payload.data;
       })
       .addCase(fetchTopWinner.pending, (state, action) => {
@@ -66,7 +66,7 @@ const winnerSlice = createSlice({
         state.moreWinnersStatus = "loading";
       })
       .addCase(fetchMoreWinner.fulfilled, (state, action) => {
-        state.moreWinnersStatus = "succeed";
+        state.moreWinnersStatus = "success";
         state.moreWinners = action.payload.data.moreNames;
       });
   },

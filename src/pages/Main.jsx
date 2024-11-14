@@ -32,12 +32,23 @@ const Main = () => {
   return (
     <section className="wheel">
       {show && <ShowPrize onClose={onClose} />}
-      <div className="btn-bar">
+      <div className="btn-bar px-1">
         <CustomButton
           text={"Back"}
           icon={<FaArrowLeft />}
           className={"flex flex-reverse btn btn-next"}
           onClickFun={() => nav("/")}
+        />
+        <CustomButton
+          text={"Play Now"}
+          className={"btn btn-rounded"}
+          onClickFun={() => {
+            const anchor = document.createElement("a");
+            anchor.href = "https://m.batman688.net/";
+            // anchor.target = "_blank";
+            anchor.rel = "noopener noreferrer";
+            anchor.click();
+          }}
         />
         <CustomButton
           text={"Winner List"}
@@ -66,7 +77,7 @@ const Main = () => {
         tabBarGutter={10}
         defaultActiveKey="1"
       /> */}
-      <FloatingBar hideRecent={true} />
+      {/* <FloatingBar hideRecent={true} /> */}
       <Wheel handleShow={onShow} />
     </section>
   );

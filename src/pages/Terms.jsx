@@ -13,9 +13,9 @@ const Terms = () => {
   useEffect(() => {
     dispatch(fetchTerms({ api: "uiThing?settingName=Terms" }));
   }, []);
-  console.log(terms);
+  // console.log(terms);
   const text = terms?.split("\n");
-  console.log(text);
+  // console.log(text);
   const termsAndPolicy = text?.map((tx, i) => {
     return (
       <p className="terms-text" key={i}>

@@ -5,7 +5,12 @@ import { useNavigate } from "react-router";
 const FloatingBar = ({ hideRecent = false }) => {
   const nav = useNavigate();
   const playNow = () => {
-    nav("/wheel");
+    const anchor = document.createElement("a");
+    anchor.href = "https://m.batman688.net/";
+    // anchor.target = "_blank";
+    anchor.rel = "noopener noreferrer";
+    anchor.click();
+    // nav("/wheel");
   };
   const winnerList = () => {
     nav("/winners");

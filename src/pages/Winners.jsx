@@ -19,12 +19,12 @@ const Winners = () => {
   const dispatch = useDispatch();
   const top10List = useSelector(selectTop10);
   const moreWinners = useSelector(selectMoreWinners);
-  console.log(top10List, moreWinners);
+  // console.log(top10List, moreWinners);
   useEffect(() => {
     dispatch(fetchTopWinner({ api: "uiThing/top10" }));
     dispatch(fetchMoreWinner({ api: "uiThing/more-winners" }));
   }, []);
-  console.log(moreWinners, top10List);
+  // console.log(moreWinners, top10List);
 
   const top10Body = top10List.map((d, i) => {
     return (
@@ -54,6 +54,17 @@ const Winners = () => {
             icon={<FaArrowLeft />}
             className={"flex flex-reverse btn btn-next"}
             onClickFun={() => nav("/")}
+          />
+          <CustomButton
+            text={"Play Now"}
+            className={"btn btn-rounded"}
+            onClickFun={() => {
+              const anchor = document.createElement("a");
+              anchor.href = "https://m.batman688.net/";
+              // anchor.target = "_blank";
+              anchor.rel = "noopener noreferrer";
+              anchor.click();
+            }}
           />
           <CustomButton
             text={"Play Spin"}

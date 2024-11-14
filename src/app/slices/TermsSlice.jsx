@@ -32,8 +32,8 @@ export const termsSlice = createSlice({
       state.termsStatus = "loading";
     });
     builder.addCase(fetchTerms.fulfilled, (state, action) => {
-      state.termsStatus = "succeeded";
-      console.log(action.payload);
+      state.termsStatus = "success";
+      // console.log(action.payload);
       state.terms = action.payload.data[0].text;
     });
     builder.addCase(fetchTerms.rejected, (state, action) => {

@@ -43,8 +43,9 @@ body {
 }
 
 .btn {
-  text-decoration: none;
+  // text-decoration: none;
   cursor: pointer;
+  // width: 20rem;
   &:active {
     position: relative;
     top: 1px;
@@ -57,7 +58,7 @@ body {
   height: 7.2rem;
 }
 .btn-bar {
-  padding: 2rem 5rem;
+  padding: 2rem 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -82,6 +83,31 @@ body {
         #774b00 110.07%
       );
     }
+  }
+}
+
+.btn-rounded {
+  border-radius: 1rem;
+  background: linear-gradient(
+    180deg,
+    #dd9928 -11.46%,
+    #ffd796 29.27%,
+    #dd9928 89.17%,
+    #bb7d15 108.33%
+  );
+  color: var(--text-color);
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+
+  &:hover {
+    background: linear-gradient(
+      278.05deg,
+      #996207 -5.37%,
+      #dd9928 20.88%,
+      #ffc76a 43.52%,
+      #bb7d15 67.38%,
+      #774b00 110.07%
+    );
   }
 }
 .rounded-img {
@@ -127,4 +153,21 @@ body {
 .flex-reverse {
   flex-direction: row-reverse;
   align-items: center;
+}
+
+.gap-2 {
+  gap: 2rem;
+}
+
+.gap-4 {
+  gap: 4rem;
+}
+
+.pb-2 {
+  margin-bottom: 2rem;
+}
+
+.px-1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }

@@ -15,7 +15,7 @@ export const fetchAdsList = createAsyncThunk(
   "wheel/fetchAdsList",
   async ({ api }) => {
     const data = await getData(api);
-    console.log(data);
+    // console.log(data);
     return data;
   }
 );
@@ -28,7 +28,7 @@ export const fetchWheelImg = createAsyncThunk(
       if (data.status === "failed") {
         return thunkApi.rejectWithValue(data.message);
       }
-      console.log(data);
+      // console.log(data);
       return data;
     } catch (error) {
       return thunkApi.rejectWithValue(error);
@@ -56,7 +56,11 @@ export const updateLucky = createAsyncThunk(
   "wheel/updateLucky",
   async ({ api, data }, thunkApi) => {
     try {
+      console.log(api, data);
       const response = await axios.put(`${base_url}${api}`, data, config);
+      if (response.status === "failed") {
+        return thunkApi.rejectWithValue(response.message);
+      }
       console.log(response);
       return response.data;
     } catch (error) {
@@ -90,14 +94,18 @@ const initialState = {
 const wheelSlice = createSlice({
   name: "wheel",
   initialState,
-  reducers: {},
+  reducers: {
+    resetUpdateLuckyStatus: (state) => {
+      state.updateLuckyStatus = "";
+    },
+  },
   extraReducers: (builder) => {
     builder
       .addCase(fetchRewardList.pending, (state) => {
         state.rewardListStatus = "loading";
       })
       .addCase(fetchRewardList.fulfilled, (state, action) => {
-        state.rewardListStatus = "succeed";
+        state.rewardListStatus = "success";
         state.rewardList = action.payload;
       })
       .addCase(fetchRewardList.rejected, (state, action) => {
@@ -108,7 +116,7 @@ const wheelSlice = createSlice({
         state.adsListStatus = "loading";
       })
       .addCase(fetchAdsList.fulfilled, (state, action) => {
-        state.adsListStatus = "succeed";
+        state.adsListStatus = "success";
         state.adsList = action.payload;
       })
       .addCase(fetchAdsList.rejected, (state, action) => {
@@ -152,10 +160,10 @@ const wheelSlice = createSlice({
   },
 });
 
-export const { setImage } = wheelSlice.actions;
+export const { resetUpdateLuckyStatus } = wheelSlice.actions;
 
 export const selectRewardList = (state) => {
-  console.log(state);
+  // console.log(state);
   return state.wheel.rewardList;
 };
 export const selectRewardListStatus = (state) => state.wheel.rewardListStatus;
