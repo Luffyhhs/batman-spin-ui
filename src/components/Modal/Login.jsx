@@ -53,7 +53,7 @@ const Login = (props) => {
       <form onSubmit={formik.handleSubmit} className="login">
         <CustomInput
           type="text"
-          label="Please Enter GameId"
+          label=""
           placeholder="GameId"
           id="name"
           name="name"
@@ -68,7 +68,7 @@ const Login = (props) => {
         </div>
         <CustomInput
           type="password"
-          label="Password"
+          label=""
           placeholder="Enter Password"
           id="password"
           name="password"
