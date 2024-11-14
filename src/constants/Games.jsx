@@ -1,7 +1,7 @@
 export const vip = [
   {
     name: "Lucky Spin",
-    img: "/imgs/spin.png",
+    img: "/imgs/Spin.png",
     click: "wheel",
     available: true,
   },
@@ -34,7 +34,7 @@ export const slot = [
   },
   {
     name: "Jili",
-    img: "/imgs/jili.png",
+    img: "/imgs/Jili.png",
     link: "https://m.batman688.net/game/JILI",
     available: true,
   },
