@@ -22,19 +22,19 @@ export const vip = [
 export const slot = [
   {
     name: "Live22SM",
-    img: "/imgs/live22.png",
+    img: "/imgs/live22_play.png",
     link: "https://m.batman688.net/game/LIVE22",
     available: true,
   },
   {
     name: "Pragmatic Play",
-    img: "/imgs/Pragmatic.png",
+    img: "/imgs/pragmatic_play.png",
     link: "https://m.batman688.net/game/PRAGMATIC_SLOT",
     available: true,
   },
   {
     name: "Jili",
-    img: "/imgs/Jili.png",
+    img: "/imgs/jili_play.png",
     link: "https://m.batman688.net/game/JILI",
     available: true,
   },
