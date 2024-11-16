@@ -22,7 +22,7 @@ const Layout = (props) => {
     dispatch(fetchAdsList({ api: "ads" }));
     loginUser !== null && token && dispatch(getSpin({ api: "user/getSpin" }));
   }, []);
-  console.log(location);
+  // console.log(location);
   return (
     <>
       <div className="layout">

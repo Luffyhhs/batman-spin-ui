@@ -73,7 +73,7 @@ const Wheel = ({ handleShow }) => {
 
   const handleAnimateEnd = (e) => {
     e.preventDefault();
-    console.log(e);
+    // console.log(e);
     handleShow();
   };
   return (

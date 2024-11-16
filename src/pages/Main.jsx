@@ -2,7 +2,11 @@ import React, { useEffect } from "react";
 import Wheel from "../components/Wheel/Wheel";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchWheelImg, getRandomLucky } from "../app/slices/WheelSlice";
-import { getSpin, selectSpin } from "../app/slices/auth/AuthSlice";
+import {
+  getSpin,
+  selectLoginUser,
+  selectSpin,
+} from "../app/slices/auth/AuthSlice";
 import { useState } from "react";
 import ShowPrize from "../components/Modal/ShowPrize";
 import CustomButton from "../components/Buttons/CustomButton";
@@ -16,11 +20,16 @@ import FloatingBar from "../components/Bars/FloatingBar";
 const Main = () => {
   const dispatch = useDispatch();
   const spinTime = useSelector(selectSpin);
+  const loginUser = useSelector(selectLoginUser);
   useEffect(() => {
     dispatch(fetchWheelImg({ api: "wheel" }));
-    dispatch(getSpin({ api: "user/getSpin" }));
-    dispatch(getRandomLucky({ api: "lucky/getRandom" }));
   }, []);
+  useEffect(() => {
+    if (loginUser) {
+      dispatch(getSpin({ api: "user/getSpin" }));
+      dispatch(getRandomLucky({ api: "lucky/getRandom" }));
+    }
+  }, [loginUser]);
   const nav = useNavigate();
   const [show, setShow] = useState(false);
   const onShow = () => {
@@ -57,27 +66,6 @@ const Main = () => {
           onClickFun={() => nav("/winners")}
         />
       </div>
-      {/* <Tabs
-        items={[
-          {
-            key: 1,
-            label: "Wheel",
-            children: ,
-          },
-          {
-            key: 2,
-            label: "Card",
-            children: <LuckyCards />,
-          },
-        ]}
-        type="card"
-        // indicator={{ align: "end" }}
-        size="large"
-        centered={true}
-        tabBarGutter={10}
-        defaultActiveKey="1"
-      /> */}
-      {/* <FloatingBar hideRecent={true} /> */}
       <Wheel handleShow={onShow} />
     </section>
   );

@@ -7,7 +7,7 @@ const Box = ({ item }) => {
     <div
       className="game"
       onClick={() => {
-        console.log("work");
+        // console.log("work");
         if (item?.click && item?.available) {
           nav(item.click);
         } else if (!item?.available) {

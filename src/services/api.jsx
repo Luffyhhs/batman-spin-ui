@@ -28,7 +28,7 @@ export const getDataWithToken = async (api) => {
     //   throw new Error("Network Response was not ok.");
     // }
     const data = await response.json();
-    console.log(data);
+    // console.log(data);
     return data;
   } catch (error) {
     throw new Error("error getting with token:" + error.message);
