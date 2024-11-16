@@ -52,12 +52,28 @@ export const getRandomLucky = createAsyncThunk(
     }
   }
 );
+export const outedLucky = createAsyncThunk(
+  "wheel/outedLucky",
+  async ({ api }, thunkApi) => {
+    try {
+      const response = await getDataWithToken(api);
+      if (response.status === "failed") {
+        return thunkApi.rejectWithValue(response.message);
+      }
+      console.log(response);
+      return response;
+    } catch (error) {
+      return thunkApi.rejectWithValue(error);
+    }
+  }
+);
 export const updateLucky = createAsyncThunk(
   "wheel/updateLucky",
   async ({ api, data }, thunkApi) => {
     try {
       console.log(api, data);
       const response = await axios.put(`${base_url}${api}`, data, config);
+      console.log(response);
       if (response.status === "failed") {
         return thunkApi.rejectWithValue(response.message);
       }
@@ -87,6 +103,10 @@ const initialState = {
   luckyObj: {},
   luckyStatus: "",
   luckyError: "",
+
+  outedLucky: {},
+  outedLuckyStatus: "",
+  outedLuckyMessage: "",
 
   deg: 0,
 };
@@ -156,6 +176,17 @@ const wheelSlice = createSlice({
       .addCase(updateLucky.rejected, (state, action) => {
         state.updateLuckyStatus = "fail";
         state.updateLuckyError = action.payload.message;
+      })
+      .addCase(outedLucky.pending, (state) => {
+        state.outedLuckyStatus = "loading";
+      })
+      .addCase(outedLucky.fulfilled, (state, action) => {
+        state.outedLuckyStatus = "success";
+        state.outedLucky = action.payload.data;
+      })
+      .addCase(outedLucky.rejected, (state, action) => {
+        state.outedLuckyStatus = "fail";
+        state.outedLuckyMessage = action.payload.message;
       });
   },
 });
@@ -180,5 +211,8 @@ export const selectLuckyError = (state) => state.wheel.luckyError;
 export const selectDeg = (state) => state.wheel.deg;
 export const selectUpdateLuckyStatus = (state) => state.wheel.updateLuckyStatus;
 export const selectUpdateLuckyError = (state) => state.wheel.updateLuckyError;
+export const selectOutedLucky = (state) => state.wheel.outedLucky;
+export const selectOutedLuckyStatus = (state) => state.wheel.outedLuckyStatus;
+export const selectOutedLuckyMessage = (state) => state.wheel.outedLuckyMessage;
 
 export default wheelSlice.reducer;

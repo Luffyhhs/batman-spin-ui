@@ -12,6 +12,8 @@ import {
   selectUpdateLuckyError,
   selectRewardList,
   resetUpdateLuckyStatus,
+  outedLucky,
+  selectOutedLucky,
 } from "../../app/slices/WheelSlice";
 import { useEffect } from "react";
 import { selectSpin } from "../../app/slices/auth/AuthSlice";
@@ -26,15 +28,18 @@ const Wheel = ({ handleShow }) => {
   const updateLuckyError = useSelector(selectUpdateLuckyError);
   const spinTime = useSelector(selectSpin);
   const rewardList = useSelector(selectRewardList);
+  // const outedLucky = useSelector(selectOutedLucky);
 
   const deg = useSelector(selectDeg);
   // console.log(spinTime, deg, luckyObj);
   // const deg = useSelector();
   // updateLuckyError !== "" && console.log(updateLuckyError);
   useEffect(() => {
-    updateLuckyStatus === "success" && rotate();
-    updateLuckyStatus === "success" &&
+    if (updateLuckyStatus === "success") {
+      rotate();
+      dispatch(outedLucky({ api: `lucky/${luckyObj._id}` }));
       dispatch(getRandomLucky({ api: "lucky/getRandom" }));
+    }
     updateLuckyStatus === "fail" ||
       (updateLuckyStatus === "success" && dispatch(resetUpdateLuckyStatus()));
   }, [updateLuckyStatus]);
