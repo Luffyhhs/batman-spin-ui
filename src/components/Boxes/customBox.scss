@@ -12,16 +12,14 @@
     grid-template-columns: 0.75fr 0.37fr;
   }
   &-bar {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 0.58fr 0.37fr;
+    // width: 100%;
+    display: flex;
+    justify-content: center;
+    // grid-template-columns: 0.58fr 0.37fr;
     align-items: center;
     margin-bottom: 0.8rem;
 
     &--title {
-      justify-self: flex-end;
-      display: inline-block;
-      text-align: end;
       font-style: normal;
       font-weight: 700;
       font-size: 3.2rem;

@@ -37,14 +37,14 @@ const CustomBox = (props) => {
             >
               {props?.title}
             </h4>
-            <div className={`${props?.bgImg ? "arrows arrows-vip" : "arrows"}`}>
+            {/* <div className={`${props?.bgImg ? "arrows arrows-vip" : "arrows"}`}>
               <span>
                 <bs.BsArrowLeftCircle />
               </span>
               <span>
                 <bs.BsArrowRightCircle />
               </span>
-            </div>
+            </div> */}
           </div>
         )}
         <div className="games">

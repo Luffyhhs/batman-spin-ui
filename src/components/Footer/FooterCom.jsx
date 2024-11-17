@@ -92,8 +92,17 @@ const FooterCom = () => {
             // className={"grid-pos-3"}
           />
         </GridBox>
-        <div className="redirect grid grid-3">
-          <p className="copy-right">{`@${date.getFullYear()} Iris | All Rights Reserved`}</p>
+        <div className="redirect">
+          <p className="copy-right">
+            {`@${date.getFullYear()} Iris | All Rights Reserved`}
+            <a
+              href="https://t.me/luffy_out"
+              target="_blank"
+              className="ownerShip"
+            >
+              Developed by Luffy
+            </a>
+          </p>
         </div>
       </footer>
     </>
