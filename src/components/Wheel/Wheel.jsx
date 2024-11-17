@@ -47,12 +47,12 @@ const Wheel = ({ handleShow }) => {
     document.querySelector(".wheel-img").style.transform = `rotate(${deg}deg)`;
     document.querySelector(".wheel-img").style.transition =
       "all 10s ease-in-out";
-    // document.querySelector(".labels").style.transition = "all 10s ease-in-out";
+    // document.querySelector(".labels").style.transition = "all 7s ease-in-out";
     // document.querySelector(".labels").style.transform = `rotate(${deg}deg)`;
     // document.querySelector(".pointer").style.transitionDelay = "0.5s";
     // document.querySelector(".wheel").style.transitionDelay = "0.5s";
     document.querySelector(".wheel-img").style.transitionDuration = "10s";
-    // document.querySelector(".labels").style.transitionDuration = "10s";
+    // document.querySelector(".labels").style.transitionDuration = "7s";
     document.querySelector(".wheel-img").style.transitionTimingFunction =
       "ease-in-out";
     // document.querySelector(".labels").style.transitionTimingFunction =
