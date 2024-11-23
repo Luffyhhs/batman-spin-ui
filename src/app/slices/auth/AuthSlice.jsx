@@ -31,6 +31,22 @@ export const login = createAsyncThunk(
   }
 );
 
+export const logout = createAsyncThunk(
+  "auth/logout",
+  async ({ api }, thunkApi) => {
+    try {
+      const data = await authService.logout(api);
+      // console.log(data);
+      if (data?.status === "failed") {
+        return thunkApi.rejectWithValue(data.message);
+      }
+      return data;
+    } catch (error) {
+      return thunkApi.rejectWithValue(error);
+    }
+  }
+);
+
 export const getSpin = createAsyncThunk(
   "auth/getSpin",
   async ({ api }, thunkApi) => {

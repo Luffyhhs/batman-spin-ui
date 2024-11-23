@@ -27,7 +27,8 @@ const ShowPrize = (props) => {
           <img src={userReward.rewardImage} alt="Reward" />
         </div>*/}
         <div className="mm-text">
-          Screen Shot ရိုက်ပြီး ကစားထားသော Agent တွင်ထုတ်ယူပါ
+          ၅သောင်းကျပ်အောက်ဆုမဲများကို၁၅မိနစ်အတွင်းအလိုအလျောက် Unit
+          ဖြည့်သွင်းပေးသွားပါမည်
         </div>
       </div>
     </Modal>

@@ -37,6 +37,7 @@ const Wheel = ({ handleShow }) => {
   useEffect(() => {
     if (updateLuckyStatus === "success") {
       rotate();
+      new Audio("/audio/spin.mp3").play();
       dispatch(outedLucky({ api: `lucky/${luckyObj._id}` }));
       dispatch(getRandomLucky({ api: "lucky/getRandom" }));
     }
@@ -73,6 +74,7 @@ const Wheel = ({ handleShow }) => {
 
   const handleAnimateEnd = (e) => {
     e.preventDefault();
+    new Audio("/audio/congrats.mp3").play();
     // console.log(e);
     handleShow();
   };
