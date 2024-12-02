@@ -60,7 +60,7 @@ export const outedLucky = createAsyncThunk(
       if (response.status === "failed") {
         return thunkApi.rejectWithValue(response.message);
       }
-      console.log(response);
+      // console.log(response);
       return response;
     } catch (error) {
       return thunkApi.rejectWithValue(error);
@@ -71,13 +71,13 @@ export const updateLucky = createAsyncThunk(
   "wheel/updateLucky",
   async ({ api, data }, thunkApi) => {
     try {
-      console.log(api, data);
+      // console.log(api, data);
       const response = await axios.put(`${base_url}${api}`, data, config);
-      console.log(response);
+      // console.log(response);
       if (response.status === "failed") {
         return thunkApi.rejectWithValue(response.message);
       }
-      console.log(response);
+      // console.log(response);
       return response.data;
     } catch (error) {
       return thunkApi.rejectWithValue(error.response.data);
