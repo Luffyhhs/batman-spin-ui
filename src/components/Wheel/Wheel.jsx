@@ -15,7 +15,7 @@ import {
   outedLucky,
   selectOutedLucky,
 } from "../../app/slices/WheelSlice";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { selectSpin } from "../../app/slices/auth/AuthSlice";
 
 const Wheel = ({ handleShow }) => {
@@ -28,6 +28,7 @@ const Wheel = ({ handleShow }) => {
   const updateLuckyError = useSelector(selectUpdateLuckyError);
   const spinTime = useSelector(selectSpin);
   const rewardList = useSelector(selectRewardList);
+  const [clicked, setClicked] = useState(false);
   // const outedLucky = useSelector(selectOutedLucky);
 
   const deg = useSelector(selectDeg);
@@ -62,6 +63,7 @@ const Wheel = ({ handleShow }) => {
 
   const handleSpin = (e) => {
     e.preventDefault();
+    setClicked(true);
     dispatch(
       updateLucky({
         api: `lucky/${luckyObj._id}`,
@@ -88,7 +90,11 @@ const Wheel = ({ handleShow }) => {
           </div>
           <img src={"/imgs/Pointer.png"} alt="Pointer" className="pointer" />
           {spinTime > 0 ? (
-            <button className="spin-btn" onClick={handleSpin}></button>
+            <button
+              className="spin-btn"
+              onClick={handleSpin}
+              disabled={clicked}
+            ></button>
           ) : (
             <button className="spin-btn disable" disabled></button>
           )}
